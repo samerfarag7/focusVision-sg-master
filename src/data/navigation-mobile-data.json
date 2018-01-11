@@ -1,0 +1,31 @@
+[
+{
+    aria: "Dashboard",
+    icon: "icon-dashboard",
+    active: true,
+    disabled: false
+},
+{
+    aria: "Schedule",
+    icon: "icon-schedule",
+    active: false,
+    disabled: true
+},
+{
+    aria: "Sites",
+    icon: "icon-sites",
+    active: false,
+    disabled: false
+},
+{
+    aria: "Employees",
+    icon: "icon-employees",
+    active: false,
+    disabled: false
+},
+{
+    aria: "Menu",
+    icon: "icon-menu",
+    active: false,
+    disabled: false
+}]

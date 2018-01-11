@@ -1,0 +1,21 @@
+<div class="dropdown-container{{#if disabled}} dropdown-disabled{{/if}}{{#if dropdown-class}} {{dropdown-class}}{{/if}}{{#if dropdown-size}} {{dropdown-size}}{{^}} dropdown-regular{{/if}}">
+    {{#if label}}
+    <label class="{{#if label-class}}{{label-class}} {{/if}}{{#if disabled}}disabled-class {{/if}}{{#if error}}error-class{{/if}}">{{label}}</label>
+    {{^}}
+    <label>Label</label>
+    {{/if}}
+    <div class="select">
+        <select {{#if disabled}}disabled{{/if}} class="selectpicker{{#if error}} dropdown-error mb-3{{/if}}">{{#if dropdown-type}}{{#each dropdown-sort}}
+            <option{{#if this.disabled}} disabled{{/if}}>{{this.name}}</option>{{/each}} {{^}}{{#each dropdown-data}}
+                <option{{#if this.disabled}} disabled{{/if}}>{{this.name}}</option>{{/each}}{{/if}}
+        </select>
+        {{#if error}}
+        <div class="input-error py-3 pl-4 pr-5 d-flex d-row" id="validation-msg">
+            <svg class="icon icon-error" width="{{#if icon-width}}{{icon-width}}{{^}}24{{/if}}" height="{{#if icon-width}}{{icon-width}}{{^}}24{{/if}}" aria-label="Validation error detected">
+                <use xlink:href="#icon-error"></use>
+            </svg>
+            <p class="body-2-medium ml-3">{{error}}</p>
+        </div>
+        {{/if}}
+    </div>
+</div>

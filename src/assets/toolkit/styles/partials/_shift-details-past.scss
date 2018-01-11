@@ -1,0 +1,31 @@
+.shift-details-past {
+    width: 370px;
+
+    .label {
+        text-align: left;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.36;
+        letter-spacing: 0.6;
+        color: $indigo;
+        border-bottom: solid 1px $otherGrey;
+    }
+
+    .mdc-list-shift {
+    	padding-left: 0;
+    	padding-right: 0;
+    	box-shadow: none;
+    }
+
+    .text {
+    	font-size: 12px;
+        text-align: left;
+
+    	.text-instruction {
+    		font-size: 16px;
+    		line-height: 1.25;
+    		letter-spacing: 0.2;
+    		color: $darkerGrey;
+    	}
+    }
+}

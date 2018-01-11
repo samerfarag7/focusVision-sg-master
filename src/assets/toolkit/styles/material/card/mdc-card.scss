@@ -1,0 +1,130 @@
+// 
+// Copyright 2016 Google Inc. All Rights Reserved.
+// 
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+// 
+//      http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+@import "../elevation/mixins";
+@import "../theme/mixins";
+@import "../typography/mixins";
+@import "../rtl/mixins";
+
+// postcss-bem-linter: define card
+.mdc-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    min-width: 157px;
+    cursor: pointer;
+    color: $darkGrey;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+
+    &__primary {
+        padding: 10px 14px;
+        min-width: 0;
+    }
+
+    &__supporting-text {
+        padding: 10px 14px;
+        min-width: 0;
+        color: $darkerGrey;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        padding: 0 14px 10px;
+        min-width: 0;
+
+        a {
+            @extend .mdc-typography--subheading2;
+
+            font-weight: 600 !important;
+        }
+
+        p {
+            @extend .mdc-typography--subheading1;
+        }
+    }
+
+    &__title {
+        margin: 0;
+
+        @extend .mdc-typography--headline;
+    }
+
+    &__title--large {
+        @extend .mdc-typography--body2;
+
+        font-weight: 600 !important;
+        color: $darkerGrey;
+    }
+
+    &__subtitle {
+        margin: 0;
+
+        @extend .mdc-typography--subheading2;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__title, &__title--large, &__subtitle, &__actions p, &__actions img {
+        transition: all 0.3s ease;
+    }
+
+    &__horizontal-block {
+        display: flex;
+        justify-content: space-between;
+
+        //*---------------------------------------*
+        //  MDC Card Primary
+        //*---------------------------------------*
+        .mdc-card__primary {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        //*---------------------------------------*
+        //  Aside
+        //*---------------------------------------*
+        aside {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 16px 20px;
+            flex-basis: 25%;
+        }
+    }
+
+    &__primary, &__horizontal-block, &__actions {
+        > * {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    h4 {
+        color: $darkerGrey;
+    }
+}
+
+// postcss-bem-linter: end

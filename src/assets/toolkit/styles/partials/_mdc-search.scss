@@ -1,0 +1,138 @@
+.mdc-search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .mdc-input-search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 4px 4px 0px 0px;
+        border: solid 1px $lightGrey;
+        padding: 12px 16px;
+
+        input {
+            width: 100%;
+            border: none;
+            margin: 0px 12px;
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 1.31;
+            color: $grey;
+            &:focus {
+                border-color: $darkBlue !important;
+                outline: 0;
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .mdc-search-results {
+        display: none;
+        flex-direction: column;
+        height: 300px;
+        border-radius: 0px 0px 4px 4px;
+        border: solid 1px $lightGrey;
+
+        .row {
+            border-bottom: 1px solid $lighterGrey;
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+
+            .user {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                img {
+                    height: 36px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .details {
+                span {
+                    display: inline-block;
+                    width: 60px;
+                }
+                .time {
+                    margin-left: 20px;
+                }
+            }
+
+            span {
+                font-size: 14px;
+                line-height: 1.5;
+                color: $darkerGrey;
+
+                &.username {
+                    font-size: 16px;
+                    margin-left: 16px;
+                    font-weight: 600;
+                    line-height: 1.31;
+                }
+            }
+        }
+
+         :last-child {
+            border: 0;
+        }
+    }
+}
+
+.hideTooltip{
+    display: none;
+}
+
+.filterTemplate {
+    z-index: 20000;
+    width: 320px;
+    padding: 8px 12px;
+    text-align: left;
+
+    .title {
+        border-bottom: 1px solid $lighterGrey;
+        width: 100%;
+
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.36;
+            letter-spacing: 0.6px;
+            color: $indigo;
+        }
+    }
+
+    .dropdown-container {
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.36;
+            letter-spacing: 0.6px;
+            text-align: left;
+            color: $indigo;
+        }
+        p {
+            border: none;
+        }
+    }
+
+    .mdc-form-field {
+        margin-bottom: 16px;
+    }
+
+    .requirements {
+        h4 {
+            margin: 8px 0px;
+        }
+        p {
+            margin: 2px 0px;
+        }
+    }
+}

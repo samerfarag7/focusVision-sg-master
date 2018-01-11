@@ -1,0 +1,51 @@
+<form class="form-group-basic">
+    <p class="title-2 mb-5">Form Title</p>{{#if error}}
+    <div class="form-group">
+        <div class="alert alert-error d-flex align-items-center mt-4 py-3 pl-4 pr-5" role="alert">
+            <svg class="icon icon-error" width="24" height="24" aria-label="">
+                <use xlink:href="#icon-error"></use>
+            </svg>
+            <p class="ml-3 body-2-medium alert-title">This is an error message.</p>
+        </div>
+    </div>{{/if}}
+    <div class="form-group form-textfield">
+        <label for="Name Input">Name</label>
+        <input type="text" id="input" class="form-control form-textfield-input">
+    </div>
+    <div class="form-group">
+        <label for="Email Input">Email address</label>
+        <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp" placeholder="">
+    </div>
+    <div class="form-group">
+        <div class="dropdown-container dropdown-regular ">
+            <label>Language</label>
+            <div class="select">
+                <select class="selectpicker">
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>Cantonese</option>
+                    <option>Mandarin</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group mb-6">
+        <div class="form-check">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="{{#if error}}errorCheckbox{{else}}checkbox{{/if}}">
+                <label class="custom-control-label body-2" for="{{#if error}}errorCheckbox{{else}}checkbox{{/if}}">
+                    <svg class="checkbox-checkmark" viewBox="-4 -6 20 20">
+                        <g fill="none">
+                            <path stroke="#fff" stroke-width="2" d="M1.5 3.75l3 3 6-6" />
+                        </g>
+                    </svg>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group text-right">
+        <button type="button" class="btn btn-primary btn-utility mr-3">Cancel</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+</form>

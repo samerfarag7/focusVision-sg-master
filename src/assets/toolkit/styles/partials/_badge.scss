@@ -1,0 +1,33 @@
+//*---------------------------------------*
+//  Badge
+//*---------------------------------------*
+.badge.badge-pill{
+    padding: 2px 8px;
+    font-size: .6875rem;
+    font-weight: $font-weight-black;
+    letter-spacing: .8px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-align: middle;
+
+    &.badge-draft {
+        color: #008080;
+        background-color: rgba(#008080, .1);
+    }
+    
+    &.badge-live {
+        color: $dark-purple;
+        background-color: rgba($dark-purple, .1);
+    }
+    
+    &.badge-closed {
+        color: #0e5b8f;
+        background-color: rgba(#0e5b8f, .1);
+    }
+    
+    &.badge-archived {
+        color: $pewter;
+        background-color: rgba($pewter, .1);
+    }
+}
+

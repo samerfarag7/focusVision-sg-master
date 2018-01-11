@@ -1,0 +1,150 @@
+//This controls the dimentions of the Border Radius, Shadow, and Spacer Boxes
+$box-dimention: 200px;
+
+ul.box-list {
+  padding: 0;
+
+  & > li {
+    list-style-type: none;
+  }
+}
+
+.style-box  /*Needs Webskit*/{
+    width: $box-dimention;
+    height: $box-dimention;
+    margin: 23px 80px 23px 0px;
+    color: $pewter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+  .border-radius-box {
+    background-color: $pale-grey;
+   }
+  
+  .shadow-style-box {
+    background-color: $white;
+  }
+  
+  .border-radius{
+    border-radius: $border-radius;
+    
+    &-l {
+      border-radius: $border-radius-l; 
+    }
+    
+    &-s {
+      border-radius: $border-radius-s; 
+    }
+  }
+  
+  .box-shadow {
+    &-none {
+      border: solid 1px $pale-grey;
+    }
+    &-subtle {
+      box-shadow: $box-shadow-subtle;
+    }
+    &-close {
+      box-shadow: $box-shadow-close;
+    }
+    &-raised {
+      box-shadow: $box-shadow-raised;
+    }
+    &-distant {
+      box-shadow: $box-shadow-distant;
+    }
+  }
+
+  .spacing-combo-group {
+    align-items: left;
+    margin: 10px 86px 50px 0px;
+
+    > .style-box{
+      margin: 0 0 18px 0;
+    }
+
+    .spacing-style-box{
+      @extend .style-box;
+      width: 60px;
+      height: 60px;
+    }
+
+    > p{
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+
+  .spacing-size {
+    &-1 {
+      background: url(../images/spacing-1.png) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-2 {
+      background: url(../images/spacing-2.png) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-3 {
+      background: url(../images/spacing-3.png) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-4 {
+      background: url(../images/spacing-4.png) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-5 {
+      background: url(../images/spacing-5.png) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-6 {
+      background: url(../images/spacing-6.png) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-7 {
+      background: url(../images/spacing-7.png) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-8 {
+      background: url(../images/spacing-8.png) no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .spacing-combo { 
+    &-xs {
+      content: url(../images/spacing-xs.png);
+    }
+
+    &-sm {
+      content: url(../images/spacing-sm.png);
+    }
+
+    &-md {
+      content: url(../images/spacing-md.png);
+    }
+
+    &-lg {
+      content: url(../images/spacing-lg.png);
+    }
+
+    &-xl {
+      content: url(../images/spacing-xl.png);
+    }
+  }

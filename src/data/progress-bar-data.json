@@ -1,0 +1,16 @@
+[
+{
+    name: "Setup",
+    active: true,
+    step-active: true
+},
+{
+    name: "Slot Setup",
+    active: false,
+    step-active: false
+},
+{
+    name: "Instruction",
+    active: false,
+    step-active: false
+}]

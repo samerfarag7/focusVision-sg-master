@@ -1,0 +1,18 @@
+---
+fabricator: true
+title: Uploader
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Uploader</h1>
+    <ul>
+        {{#each materials.27-uploader.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+{{#each materials.27-uploader.items}}
+
+{{> f-item this}}
+
+{{/each}}

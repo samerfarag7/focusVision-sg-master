@@ -1,0 +1,43 @@
+//*---------------------------------------*
+//  Label
+//*---------------------------------------*
+label, .label {
+    @extend .mb-1;
+    font-size: $font-size-xxs;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-xxs;
+    color: $pewter;
+    text-align: left;
+
+    &.disabled-class {
+        color: rgba($slate, .3) !important;
+        border-color: 1 solid $pale-grey;
+    }
+    //&.error-class {}
+    //*---------------------------------------*
+    //  MDC Form Field : Radio + Checkbox
+    //*---------------------------------------*
+    .custom-checkbox &,
+    .custom-radio & {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 1.43;
+        color: $slate;
+        text-transform: initial;
+    }
+
+    .custom-checkbox.checkbox-dark &,
+    .custom-radio.radio-dark & {
+        color: $silver;
+    }
+
+    .custom-checkbox.checkbox-disabled &,
+    .custom-radio.radio-disabled & {
+        color: rgba($slate, .4) !important;
+    }
+
+    .custom-checkbox.checkbox-dark.checkbox-disabled &,
+    .custom-radio.radio-dark.radio-disabled & {
+        color: rgba($off-white, .4) !important;
+    }
+}

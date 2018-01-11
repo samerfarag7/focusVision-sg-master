@@ -1,0 +1,114 @@
+//
+// Copyright 2017 Google Inc. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+$mdc-typography-font-family: "Roboto", sans-serif;
+
+$mdc-typography-font-weight-values: (thin: 100, light: 300, regular: 400, medium: 600, bold: 700, black: 900) !default;
+
+/* TODO(sgomes): Figure out what to do about desktop font sizes. */
+
+/* TODO(sgomes): Figure out what to do about i18n and i18n font sizes. */
+
+$mdc-typography-styles: (display4: (font-size: 36px, line-height: 1.22, font-weight: map-get($mdc-typography-font-weight-values, regular), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), display3: (font-size: 24px, line-height: 1.25, font-weight: map-get($mdc-typography-font-weight-values, medium), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), display2: (font-size: 20px, line-height: 1.1, font-weight: map-get($mdc-typography-font-weight-values, medium), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), display1: (font-size: 18px, line-height: 1.22, font-weight: map-get($mdc-typography-font-weight-values, medium), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), headline: (font-size: 14px, line-height: 1.36, font-weight: map-get($mdc-typography-font-weight-values, medium), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), title: (font-size: 12px, line-height: 1.33, font-weight: map-get($mdc-typography-font-weight-values, medium), letter-spacing: 0.6px, margin: 0, text-decoration: inherit, text-transform: uppercase), subheading2: (font-size: 13px, line-height: 1.38, font-weight: map-get($mdc-typography-font-weight-values, regular), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), subheading1: (font-size: 12px, line-height: 1.42, font-weight: map-get($mdc-typography-font-weight-values, regular), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), body2: (font-size: 16px, line-height: 1.36, font-weight: map-get($mdc-typography-font-weight-values, regular), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), body1: (font-size: 14px, line-height: 1.25rem, font-weight: map-get($mdc-typography-font-weight-values, regular), letter-spacing: 0, margin: 0, text-decoration: inherit, text-transform: inherit), caption: (font-size: 12px, line-height: 1.33, font-weight: map-get($mdc-typography-font-weight-values, regular), letter-spacing: 0.6px, margin: 0, text-decoration: inherit, text-transform: inherit), button: (font-size: initial, line-height: 1, font-weight: map-get($mdc-typography-font-weight-values, medium), letter-spacing: 0, margin: inherit, text-decoration: none, text-transform: uppercase)) !default;
+
+//*---------------------------------------*
+//  Color Variables
+//*---------------------------------------*
+/*Primary Colors*/
+$brand-green: #00cc52 !default;
+$light-brand-green: #3fe065 !default;
+$lighter-brand-green: #75eb71 !default;
+
+/*Greys*/
+$ink: #16263b !default;
+$slate: #3e5467 !default;
+$pewter: #627585 !default;
+$cadet: #8394a3 !default;
+
+$sliver: #d7dde0 !default;
+$pale-grey: #e9edf0 !default;
+$off-white: #F7F9FA !default;
+$white: #ffffff !default;
+
+/*System Colors*/
+$green: #39a84c!default;
+$light-green: #CEF5D4 !default;
+$red: #f5496c!default;
+$light-red: #FFDBE2 !default;
+$orange: #e07a04 !default;
+$light-orange: #FFEAD1 !default;
+$blue: #428fdb !default;
+$light-blue: #D4E7FA !default;
+
+/*Secondary Colors*/
+$dark-purple: #5641cc !default;
+$purple: #725ee0 !default;
+
+/*Gradients*/
+$green-gradient: linear-gradient(111deg, #00c753, #00d4e8) !default;
+$blue-gradient: linear-gradient(111deg, #00d4e8, #786ce9) !default;
+$purple-gradient: linear-gradient(111deg, #a379ff, #786ce9) !default;
+
+//*---------------------------------------*
+//  Color Assignments
+//*---------------------------------------*
+$bodyColor: $pewter !default;
+$linkColor: $dark-purple !default;
+$linkHoverColor: $purple !default;
+$buttonColor: $light-brand-green !default;
+$buttonHoverColor: $lighter-brand-green !default;
+
+//*---------------------------------------*
+//  To Be changed
+//*---------------------------------------*
+$darkGrey: $slate !default;
+$darkerGrey: $ink !default;
+$intermediateGray: $pewter !default;
+$grey: $cadet !default;
+$lightGrey: $cadet !default;
+$offWhite: $off-white !default
+$hoverBlue: $blue;
+$lightRed: $light-red;
+$lightGreen: $light-green !default;
+$lightBlue: $light-blue !default;
+$lighterGrey: $pale-grey !default;
+$otherGrey: #EEEFF0 !default;
+$darkBlue: yellow;
+$color-text-blue: yellow;
+$darkIndigo: $dark-purple;
+$indigo: $purple;
+$lightIndigo: $purple;
+
+//*---------------------------------------*
+//  Box Shadow
+//*---------------------------------------*
+$color-box-shadow: rgba(0, 0, 0, 0.08);
+
+//*---------------------------------------*
+//  Dropdown
+//*---------------------------------------*
+$color-hover-dropdown: rgba(4, 127, 184, 0.1);
+
+//*---------------------------------------*
+//  Cards
+//*---------------------------------------*
+$color-active-card: rgba(23, 168, 235, 0.15);
+
+//*---------------------------------------*
+//  Mobile
+//*---------------------------------------*
+$color-calendar-day: rgba(255, 255, 255, 0.6);
+$color-actionable-background: rgba(46, 68, 102, 0.67);

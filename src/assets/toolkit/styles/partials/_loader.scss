@@ -1,0 +1,53 @@
+//*---------------------------------------*
+//  Loader
+//*---------------------------------------*
+.loader-indefinite {
+    margin: 18px auto;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    
+    svg {
+        display: block;
+        -webkit-animation: spinning 1.4s infinite linear;
+        animation: spinning 1.4s infinite linear;
+    }
+
+    &-small {
+        margin: 12px auto;
+        width: 23px;
+        height: 23px;
+    }
+
+    &-large {
+        margin: 26px auto;
+        width: 56px;
+        height: 56px;
+    }
+}
+
+#progress-line {
+    height: 3px;
+}
+
+.progress-bar {
+    background: linear-gradient($loading-gradient);
+    background: -webkit-linear-gradient($loading-gradient);
+}
+
+#progress-radial {
+    width: 24px;
+    height: 24px;
+  }
+
+
+@-webkit-keyframes spinning {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

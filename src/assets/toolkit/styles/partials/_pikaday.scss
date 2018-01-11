@@ -1,0 +1,308 @@
+.mdc-datepicker {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    .mdc-textfield__datepicker {
+        width: auto;
+        padding: 10px 42px !important;
+        font-family: "Lato";
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: 0.2px;
+        color: $darkerGrey;
+        background-color: $white;
+        border: solid 1px $lightGrey !important;
+        border-radius: 4px;
+
+        &::placeholder {
+            color: $grey;
+        }
+    }
+
+    .datepicker-svg {
+        position: absolute;
+        fill: $grey;
+    }
+
+    .chevron-svg {
+        cursor: pointer;
+        position: absolute;
+        fill: $grey;
+        right: 0;
+    }
+    .small-circle {
+        cursor: pointer;
+        position: absolute;
+        margin-top: 35px;
+        width: 6px;
+        height: 6px;
+        background-color: $intermediateGray;
+        border-radius: 50%;
+        right:31px;
+    }
+}
+
+
+/*!
+ * Pikaday
+ * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+ */
+
+// Variables
+// Declare any of these variables before importing this SCSS file to easily override defaults
+// Variables are namespaced with the pd (pikaday) prefix
+// Colours
+$pd-text-color: #333 !default;
+$pd-title-color: #333 !default;
+$pd-title-bg: #fff !default;
+$pd-picker-bg: #fff !default;
+$pd-picker-border: #ccc !default;
+$pd-picker-border-bottom: #bbb !default;
+$pd-picker-shadow: rgba(0, 0, 0, .5) !default;
+$pd-th-color: #999 !default;
+$pd-day-color: #666 !default;
+$pd-day-bg: #f5f5f5 !default;
+$pd-day-hover-color: #fff !default;
+$pd-day-hover-bg: #ff8000 !default;
+$pd-day-today-color: #33aaff !default;
+$pd-day-selected-color: #fff !default;
+$pd-day-selected-bg: #33aaff !default;
+$pd-day-selected-shadow: #178fe5 !default;
+$pd-day-disabled-color: #999 !default;
+$pd-week-color: #999 !default;
+
+// Font
+$pd-font-family: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif !default;
+
+
+.pika-single {
+    z-index: 9999;
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    color: $darkerGrey;
+    background: $pd-picker-bg;
+    border: 1px solid $pd-picker-border;
+    border-bottom-color: $pd-picker-border-bottom;
+    font-family: $pd-font-family;
+
+    &.is-hidden {
+        display: none;
+    }
+
+    &.is-bound {
+        position: absolute;
+        box-shadow: 0 5px 15px -5px $pd-picker-shadow;
+    }
+}
+
+// clear child float (pika-lendar), using the famous micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.pika-single {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both
+    }
+}
+
+.pika-lendar {
+    float: left;
+    width: 240px;
+    margin: 16px 24px;
+}
+
+.pika-title {
+    position: relative;
+    text-align: center;
+
+    select {
+        cursor: pointer;
+        position: absolute;
+        z-index: 9998;
+        margin: 0;
+        left: 0;
+        top: 5px;
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
+}
+
+.pika-label {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 3px;
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    font-family: "Source Sans Pro";
+    color: $darkerGrey;
+    background-color: $pd-title-bg;
+}
+
+.pika-prev,
+.pika-next {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 30px;
+    text-indent: 20px; // hide text using text-indent trick, using width value (it's enough)
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    *position: absolute;
+    *top: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &.is-disabled {
+        cursor: default;
+        opacity: .2;
+    }
+}
+
+.pika-prev,
+.is-rtl .pika-next {
+    float: left;
+    background-image: url(../images/icon-arrow-left.svg);
+    *left: 0;
+}
+
+.pika-next,
+.is-rtl .pika-prev {
+    float: right;
+    background-image: url(../images/icon-arrow-right.svg);
+    *right: 0;
+}
+
+.pika-select {
+    display: inline-block;
+    *display: inline;
+}
+
+.pika-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+
+    th,
+    td {
+        padding: 0px;
+        text-align: center;
+        background-color: none;
+    }
+
+    th {
+        color: $intermediateGray;
+        font-size: 12px;
+        font-family: "Lato";
+        line-height: 1.42;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    abbr {
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+.pika-button {
+    cursor: pointer;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    padding: 9px;
+    color: $pd-day-color;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: center;
+    background: none;
+
+    .is-today & {
+        border: solid 2px $lightGrey;
+    }
+
+    .is-selected & {
+        color: $darkBlue;
+        background: $color-hover-dropdown;
+    }
+
+    .is-disabled &,
+    .is-outside-current-month & {
+        color: $pd-day-disabled-color;
+    }
+
+    .is-disabled & {
+        color: $red;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    &:hover {
+        background: $offWhite;
+        box-shadow: none;
+        border-radius: 3px;
+    }
+
+    .is-selection-disabled {
+        color: $red;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+.pika-week {
+    font-size: 11px;
+    color: $pd-week-color;
+}
+
+.is-inrange .pika-button {
+    background: #D5E9F7;
+}
+
+.is-startrange .pika-button {
+    color: #fff;
+    background: #6CB31D;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.is-endrange .pika-button {
+    color: #fff;
+    background: #33aaff;
+    box-shadow: none;
+    border-radius: 3px;
+}

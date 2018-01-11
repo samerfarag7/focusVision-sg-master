@@ -1,0 +1,18 @@
+<div class="avatar dropdown menu-dropdown">
+    <button class="btn btn-secondary btn-avatar dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        {{#if profile-img}}
+        <img class="user-img" src="assets/toolkit/images/{{profile-img}}" />
+        {{^}}
+        <div class="user-img">
+            <span class="user-initials body-1">M</span>
+        </div>
+        {{/if}}
+        <span class="user-name body-1">Margot</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item">
+            <span>Option 1</span>
+        </a>
+    </div>
+</div>

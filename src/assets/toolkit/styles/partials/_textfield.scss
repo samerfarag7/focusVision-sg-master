@@ -1,0 +1,88 @@
+//*---------------------------------------*
+//  Form Textfield
+//*---------------------------------------*
+.form-textfield {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0px;
+
+    //*---------------------------------------*
+    //  Textfield Input
+    //*---------------------------------------*
+    .form-textfield-input {
+        width: auto;
+        height: 38px;
+        padding: 0px 14px;
+        font-size: 14px;
+        color: $ink;
+        background-color: $white;
+        border: solid 1px $silver !important;
+        border-radius: 4px;
+
+        &-large {
+            height: 48px;
+            padding: 0px 20px;
+            font-size: 16px;
+        }
+        
+        &::placeholder {
+            color: rgba($cadet, 0.5);
+        }
+
+        &:disabled {
+            background-color: $off-white;
+            cursor: not-allowed;
+
+            &::placeholder {
+                color: rgba($slate, 0.3);
+            }
+        }
+
+        &:focus {
+            border: solid 1px $brand-green !important;
+            outline: 0;
+        }
+
+        &.error-class {
+            border-color: $red !important;
+        }
+    }
+
+    //*---------------------------------------*
+    //  Textfield Disabled
+    //*---------------------------------------*
+    &-disabled {
+        border-bottom: 0;
+        cursor: not-allowed;
+
+        label {
+            color: rgba($slate, 0.4);
+        }
+
+        span.char-left {
+            color: rgba($slate, 0.4);
+        }
+    }
+}
+
+//*---------------------------------------*
+//  Form Text Area Multiline
+//*---------------------------------------*
+.form-textarea {
+    height: 100%;
+
+    textarea {
+        padding: 10px 14px !important;
+        height: 100px !important;
+    }
+
+    &:disabled {
+        border-color: $pale-grey;
+        background-color: $off-white;
+
+        &::placeholder {
+            color: rgba($slate, 0.3);
+        }
+    }
+}

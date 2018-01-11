@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Tabs
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Tabs</h1>
+    <ul>
+        {{#each materials.23-tabs.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.23-tabs.items}}
+
+{{> f-item this}}
+
+{{/each}}

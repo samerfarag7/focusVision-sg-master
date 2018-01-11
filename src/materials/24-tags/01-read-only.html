@@ -1,0 +1,16 @@
+<span class="label-tag body-1-medium{{#if tag-class}} {{tag-class}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    {{#if icon}}
+    <div class="d-flex justify-content-center align-items-center">
+    {{/if}}
+    {{#if tag-text}}
+    {{tag-text}} 
+    {{^}} 
+    Concept Test Fall 2017
+    {{/if}}
+    {{#if icon}}
+    <svg class="icon {{#if icon}}{{icon}}{{^}}icon-placeholder{{/if}} d-flex" width="{{#if icon-width}}{{icon-width}}{{^}}14px{{/if}}" height="{{#if icon-width}}{{icon-width}}{{^}}14px{{/if}}" aria-hidden="true">
+        <use xlink:href="#{{icon}}"></use>
+    </svg>
+    </div>
+    {{/if}}
+</span>

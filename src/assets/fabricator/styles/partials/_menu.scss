@@ -1,0 +1,232 @@
+// menu
+.f-menu {
+    @include border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-$menu-width, 0);
+    width: $menu-width;
+    height: 110%; /*Possibility of changing perspective*/
+    z-index: 1;
+    background-image: $menu-gradient;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: left;
+    color: $white;
+    padding: 20px;
+    padding-bottom: 10rem;
+
+    .f-menu-active & {
+        transform: translate(0, 0);
+    }
+
+    .f-main-logo {
+        width: 100%;
+        padding-bottom: 2.125rem;
+        margin: 20px 0px 18px;
+        border-bottom: 1px solid transparentize($color: $white, $amount: 0.8);
+
+        & img {
+            display: block;
+            margin: 0 auto ;
+            padding: 0 0;
+        }
+
+        & a {
+            padding: 0;
+
+        }
+    }
+
+    .f-nav-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.29;
+        opacity: .7;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    > ul {
+        margin-bottom: 1rem;
+
+        > li {
+            padding: 14px 0;
+            /*padding: 16px 0;
+            border-bottom: 1px solid #444c5c;*/
+
+            li {
+                display: none;
+            }
+        }
+
+        .f-active-top {
+            
+            .first-nav-container > li {
+                font-size: 14px;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+
+        .f-active-second {
+
+            .second-nav-container > li {
+                display: block;
+                margin-top: 0;
+                & a {
+                    padding-left: 1.75rem;
+                }
+            }
+        }
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;      
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;  
+
+        &.f-third-level {
+            & > a {
+                font-size: 13px;
+                padding-left: .875rem;
+            }
+
+            .f-active  {
+                color: rgba($white, 1);
+            }
+        }
+
+        &.f-second-level {
+            color: rgba($white, .7);
+            font-family: $font-family-main;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.43;  
+            
+            &.f-active-second > a {
+                background-color: rgba($ink, 0.15);
+                color: rgba($white, 1);
+                border-radius: 4px;
+            }
+        }
+
+        &.f-top-level {
+            .f-has-arrow svg {
+                transform: translateY(-50%);
+            }
+
+            & > a.f-menu__heading {
+                padding-right: 0;
+                padding-left: 0;
+
+            }
+            
+            // This adds a section divider on the menu
+            &[id="Overview"],
+            &[id="Style"]{
+                border-bottom: 1px solid transparentize($color: $white, $amount: 0.8);
+
+            }
+
+            &[id="Development Guidelines"]{
+                border-top: 1px solid transparentize($color: $white, $amount: 0.8);
+            } 
+        }
+
+        &.f-active-top {
+            padding-bottom: 0;
+
+            .f-has-arrow svg {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    }
+
+    a {
+        display: block;
+        position: relative;
+        padding: 0.5rem .875rem;
+        color: rgba($white, .7);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+
+        &:active,
+        &:hover,
+        &:focus {
+            color: rgba($white, 1);
+        }
+
+        &.f-has-arrow {
+            svg {
+                position: absolute;
+                top: 50%;
+                right: 0rem;
+                opacity: 0.6;
+                transform: translateY(-50%) scale(-1);
+                fill: rgba($white, .6);
+                margin: 6px 4px;
+
+                &:hover {
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    .f-menu__heading {
+        padding-left: 1.5rem;
+        font-size: 16px;
+        color: $white;
+    }
+}
+
+// This as spacing before the rule
+.f-menu li.f-active-top{
+    &[id="Overview"],
+    &[id="Style"]{
+        padding-bottom: 1rem;
+
+    }
+
+    &[id="Uploader"],
+    &[id="Tooltips"]{ //remove this once the uploader has been incorperated
+        padding-bottom: 1rem;
+    }
+}
+
+// Achor Text Styling
+.f-item-group-title {
+    background-color: $off-white;
+    padding: 6.875rem 5rem 2.5rem;
+    
+    a {
+        font-weight: 500;
+    }
+
+    & > ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        & > li {
+            display: inline; 
+            padding-right: 1.75rem;
+        }
+    }
+}

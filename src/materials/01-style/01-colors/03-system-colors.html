@@ -1,0 +1,12 @@
+{{#each toolkit.systemColors}}
+<ul class="list-group color-style">
+    <li class="list-group-item dark-color" style="background-color: {{default.hex}}">
+        <p class="title-text">{{default.title}}</p>
+        <p>{{default.hex}}</p>
+    </li>
+    <li class="list-group-item" style="background-color: {{light.hex}}">
+        <p class="title-text">{{light.title}}</p>
+        <p>{{light.hex}}</p>
+    </li>
+</ul>
+{{/each}}

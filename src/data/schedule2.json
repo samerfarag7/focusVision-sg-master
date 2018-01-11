@@ -1,0 +1,231 @@
+{
+    "days": [
+    {
+        "number": 27,
+        "day": "SUN",
+        "active": false,
+        "ot": false,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": []
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": []
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": []
+        }]
+    },
+    {
+        "number": 28,
+        "day": "MON",
+        "active": false,
+        "ot": false,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": []
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": []
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": []
+        }]
+    },
+    {
+        "number": 29,
+        "day": "TUE",
+        "active": false,
+        "ot": false,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": []
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": []
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": []
+        }]
+    },
+    {
+        "number": 30,
+        "day": "WED",
+        "active": true,
+        "today": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": []
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": []
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": []
+        }]
+    },
+    {
+        "number": 1,
+        "day": "THU",
+        "active": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": []
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": []
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": []
+        }]
+    },
+    {
+        "number": 2,
+        "day": "FRI",
+        "active": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": []
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": []
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": []
+        }]
+    },
+    {
+        "number": 3,
+        "day": "SAT",
+        "active": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": []
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": []
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": []
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": []
+        }]
+    }]
+}

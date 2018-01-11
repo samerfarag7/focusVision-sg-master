@@ -1,0 +1,78 @@
+//*---------------------------------------*
+//  Notification Box
+//*---------------------------------------*
+.notification-box {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+    max-width: 392px;
+    background-color: $darkIndigo;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
+
+    //*---------------------------------------*
+    //  Mobile
+    //*---------------------------------------*
+    &.mobile {
+        background-color: white;
+
+        .mdc-typography--display1 {
+            color: $darkerGrey;
+        }
+    }
+
+    //*---------------------------------------*
+    //  Status Error
+    //*---------------------------------------*
+    &.status-error .notification-status {
+        background-color: $red;
+    }
+
+    //*---------------------------------------*
+    //  Status Success
+    //*---------------------------------------*
+    &.status-success .notification-status {
+        background-color: $green;
+    }
+
+    //*---------------------------------------*
+    //  Notification Status
+    //*---------------------------------------*
+    .notification-status {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 72px;
+        background-color: $darkBlue;
+    }
+
+    //*---------------------------------------*
+    //  Notification Info
+    //*---------------------------------------*
+    .notification-info {
+        color: white;
+        padding: 20px 45px 20px 20px;
+
+        a {
+            display: inline-flex;
+            margin-top: 8px;
+            margin-right: 8px;
+            color: $lightBlue;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        //*---------------------------------------*
+        //  Close button
+        //*---------------------------------------*
+        .close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            cursor: pointer;
+        }
+    }
+}

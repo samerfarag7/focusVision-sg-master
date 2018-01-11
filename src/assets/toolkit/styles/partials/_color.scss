@@ -1,0 +1,60 @@
+//*---------------------------------------*
+//  Color
+//*---------------------------------------*
+.text-muted {
+    color: $ink !important;
+}
+
+.text-primary {
+    color: $slate !important;
+}
+
+.text-dark {
+    color: $ink !important;
+}
+
+.text-success {
+    color: $green !important;
+}
+
+.text-info {
+    color: $dark-purple !important;
+}
+
+.text-warning {
+    color: $red !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+//*---------------------------------------*
+//  Background
+//*---------------------------------------*
+.bg-primary {
+    color: white;
+    background-color: $ink !important;
+}
+
+.bg-dark, .bg-inverse {
+    color: white;
+    background-color: $pewter !important;
+}
+
+.bg-success {
+    background-color: $green !important;
+}
+
+.bg-info {
+    color: white;
+    background-color: $dark-purple !important;
+}
+
+.bg-warning {
+    background-color: $light-red !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}

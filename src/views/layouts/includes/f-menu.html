@@ -1,0 +1,62 @@
+<!-- fabricator menu -->
+<div class="f-menu">
+    {{> f-controls}}
+    <div class="f-main-logo">
+        <a href="01-overview.html"><img src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/images/fv-logo.svg" width="160"></a>
+        <div class="f-nav-subtitle">Product Style Guide</div>
+    </div>
+    <ul id="menu">
+        {{#each materials}}
+        <li id="{{name}}" class="f-top-level">
+            <a href="{{@key}}.html" id="{{name}}Link" data-uid="{{@key}}.html#test" class="f-menu__heading f-has-arrow">{{name}} 
+                <svg class="icon icon-caret" width="8" height="4">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-caret"></use>
+                </svg>
+            </a>
+            <ul class="first-nav-container">
+                {{#each items}}
+                <li class="f-second-level">
+                    <a class="" href="{{@../key}}.html#{{@key}}" data-uid="{{@../key}}.html#{{@key}}">{{name}}</a> {{#each items}}
+                    <ul class="second-nav-container">
+                        <li class="f-third-level">
+                            <a href="{{@../../key}}.html#{{@key}}" data-uid="{{@../../key}}.html#{{@key}}">{{name}}</a>
+                        </li>
+                    </ul>
+                    {{/each}}
+                </li>
+                {{/each}}
+            </ul>
+        </li>
+        {{/each}} {{#each views}}
+        <li id="Pages" class="f-top-level">
+            <a href="{{@key}}.html" class="f-menu__heading f-has-arrow">{{name}}
+                <svg class="icon icon-caret" width="12" height="9">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-caret"></use>
+                </svg>
+            </a>
+            <ul class="first-nav-container">
+                {{#each items}}
+                <li class="f-second-level">
+                    <a href="{{@../key}}/{{@key}}.html" target="_blank">{{name}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </li>
+        {{/each}}
+        <!--<li id="Docs" class="f-top-level">
+            <a href="docs.html" id="DocsLink" class="f-menu__heading f-has-arrow">Docs
+                <svg class="icon icon-caret" width="12" height="9">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-caret"></use>
+                </svg>
+            </a>
+            <ul class="first-nav-container">
+                {{#each docs}}
+                <li class="f-second-level">
+                    <a href="docs.html#{{@key}}">{{name}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </li>-->
+    </ul>
+</div>
+<!-- /fabricator menu -->

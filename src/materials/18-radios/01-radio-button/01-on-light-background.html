@@ -1,0 +1,9 @@
+<div class="custom-control custom-radio custom-control-inline{{#if form-field-class}} {{form-field-class}}{{/if}}{{#if disabled}} radio-disabled{{/if}}">
+    <input type="radio" class="custom-control-input" id="{{#if id}}{{id}}{{^}}radio{{/if}}" name="{{#if name}}{{name}}{{^}}radio{{/if}}" {{#if checked}}checked{{/if}} {{#if disabled}}disabled{{/if}}>
+    <label class="custom-control-label" for="{{#if id}}{{id}}{{^}}radio{{/if}}">
+        <svg class="radio-checkmark" viewBox="-10 -10 20 20">
+            <circle r="4.5" fill="#00cc52"></circle>
+        </svg>
+        <span>{{#if label}}{{label}}{{^}}Default{{/if}}</span>
+    </label>
+</div>

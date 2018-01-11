@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Buttons
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Buttons</h1>
+    <ul>
+        {{#each materials.05-buttons.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.05-buttons.items}}
+
+{{> f-item this}}
+
+{{/each}}

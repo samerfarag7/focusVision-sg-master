@@ -1,0 +1,26 @@
+[
+{
+    name: "Judith Thompson",
+    cost: "$16.00/hr",
+    time: "30/40 hrs"
+},
+{
+    name: "Sonia Gonzales",
+    cost: "$17.00/hr",
+    time: "25/40 hrs"
+},
+{
+    name: "Carlos Ramirez",
+    cost: "$17.25/hr",
+    time: "12/40 hrs"
+},
+{
+    name: "Bessie Brix",
+    cost: "$18.00/hr",
+    time: "3/20 hrs"
+},
+{
+    name: "Ronnie Watson",
+    cost: "$18.00/hr",
+    time: "18/20 hrs"
+}]

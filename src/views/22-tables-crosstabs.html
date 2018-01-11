@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Tables Crosstabs
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Tables Crosstabs</h1>
+    <ul>
+        {{#each materials.22-tables-crosstabs.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.22-tables-crosstabs.items}}
+
+{{> f-item this}}
+
+{{/each}}

@@ -1,0 +1,41 @@
+//*---------------------------------------*
+//  Tag
+//*---------------------------------------*
+.label-tag {
+    background-color: $pale-grey;
+    border-radius: 14px;
+    color: $slate;
+    display: inline-block;
+    margin: 0 2px;
+    padding: 6px 14px;
+    transition: $hover-transition;
+    &.tag--selectable {
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(0, 204, 82, .25);
+            color: $slate;
+
+            &:active {
+                background-color: rgba($slate, .8);
+                color: $white;
+            }
+        }
+        &.selected {
+            background-color: $slate;
+            color: $white;
+        }
+    }
+    &.tag--action {
+        padding-right: 6px;
+    }
+    svg.icon-cancel-s {
+        cursor: pointer;
+        fill: $cadet;
+        margin-left: 4px;
+        &:hover {
+            background-color: rgba($cadet, 0.2);
+            border-radius: 8px;
+            fill: $slate;
+        }
+    }
+}

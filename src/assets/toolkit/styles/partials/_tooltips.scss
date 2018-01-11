@@ -1,0 +1,58 @@
+.tooltip {
+  position: absolute;
+  z-index: $zindex-tooltip;
+  display: block;
+  margin: 4px;
+  // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
+  // So reset our font and text properties to avoid inheriting weird values.
+  @include reset-text();
+  font-size: $font-size-xxs;
+  font-weight: $font-weight-regular;
+  line-height: 17px;
+  // Allow breaking very long words so they don't overflow the tooltip's bounds
+  word-wrap: break-word;
+  opacity: 0;
+
+  &-inner {
+      padding: 10px 14px;
+      text-align: left;
+      width: auto;
+      max-width: $tooltip-max-width;
+  }
+}
+/*
+// Wrapper for the tooltip content
+.tooltip-inner {
+  max-width: $tooltip-max-width;
+  padding: $tooltip-padding-y $tooltip-padding-x;
+  color: $tooltip-color;
+  text-align: center;
+  background-color: $tooltip-bg;
+  @include border-radius($border-radius);
+}
+*/
+
+.tooltip-inner {
+  > p {
+    > p {
+        font-size: $font-size-xxs !important;
+        font-weight: $font-weight-medium !important;
+        line-height: $line-height-xxs !important;
+        color: $white;
+        padding-bottom: 4px;
+    }
+  
+    > a {
+      padding-top: 4px;
+      color: $silver;
+      text-decoration: underline;
+      -webkit-transition: $hover-transition;
+      transition: $hover-transition;
+  
+      &:hover {
+          color: $white;
+          text-decoration: underline;
+      }
+    }
+  }
+}

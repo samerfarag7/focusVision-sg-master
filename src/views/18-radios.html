@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Radios
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Radios</h1>
+    <ul>
+        {{#each materials.18-radios.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.18-radios.items}}
+
+{{> f-item this}}
+
+{{/each}}

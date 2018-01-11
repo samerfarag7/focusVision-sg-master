@@ -1,0 +1,16 @@
+<button type="button" class="btn btn-primary{{#if button-class}} {{button-class}}{{/if}}" {{#if id}}id="{{id}}"{{/if}} {{#if disabled}}disabled{{/if}}>
+    {{#if icon}}
+    <div class="d-flex justify-content-center align-items-center">
+        <svg class="icon {{#if icon}}{{icon}}{{^}}icon-placeholder{{/if}} mr-2 d-flex" width="{{#if icon-width}}{{icon-width}}{{^}}10px{{/if}}" height="{{#if icon-width}}{{icon-width}}{{^}}10px{{/if}}" aria-hidden="true"><use xlink:href="#{{icon}}"></use></svg>
+    {{/if}} 
+        {{#unless icon-only }} 
+        {{#if label}}
+        {{label}} 
+        {{^}} 
+    Button 
+        {{/if}} 
+        {{/unless }} 
+    {{#if icon}}
+    </div>
+    {{/if}}
+</button>

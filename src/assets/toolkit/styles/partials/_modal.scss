@@ -1,0 +1,99 @@
+.modal-standalone {
+    &.modal-dialog-fs {
+        width: 99%;
+        min-width: 99%;
+        height: 92%;
+        margin: 5;
+        padding: 5;
+    }
+
+    .modal-content-sm {
+        border-radius: 6px;
+        box-shadow: $box-shadow-distant;
+        background-color: $white;
+        border: none;
+        padding: 28px 36px;
+        width: 480px;
+    }
+
+    .modal-header {
+        border-bottom: none;
+        color: $slate;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 500;
+        padding: 0 0 28px;
+    }
+
+    .modal-title {
+        color: $ink;
+    }
+
+    .modal-body-sm {
+        color: $slate;
+        font-size: 14px;
+        background-color: rgba($brand-green, 0.15);
+        color: $pewter;
+        height: 180px;
+        line-height: 180px;
+        text-align: center;
+    }
+
+    .modal-footer {
+        border-top: none;
+        padding: 28px 0 0;
+    }
+
+    .modal-content-lg {
+        border-radius: 6px;
+        box-shadow: $box-shadow-distant;
+        background-color: $white;
+        border: none;
+        padding: 30px 36px;
+        width: 720px;
+    }
+
+    .modal-body-lg {
+        color: $slate;
+        font-size: 14px;
+        background-color: rgba($brand-green, 0.15);
+        color: $pewter;
+        width: 648px;
+        height: 388px;
+        line-height: 388px;
+        text-align: center;
+        max-height: 388px;
+        overflow-y: scroll;
+    }
+
+    .modal-header-fs {
+        border-bottom: none;
+        color: $slate;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 500;
+        padding: 0 0 48px;
+    }
+
+    .modal-content-fs {
+        border-radius: 6px;
+        box-shadow: $box-shadow-distant;
+        background-color: $white;
+        border: none;
+        padding: 48px 57px;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+    }
+
+    .modal-body-fs {
+        color: $slate;
+        font-size: 14px;
+        background-color: rgba($brand-green, 0.15);
+        color: $pewter;        
+        width: 100%;
+        line-height: 685px;
+        text-align: center;
+    }
+}
+

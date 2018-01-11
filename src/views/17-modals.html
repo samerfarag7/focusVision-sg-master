@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Modals
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Modals</h1>
+    <ul>
+        {{#each materials.17-modals.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.17-modals.items}}
+
+{{> f-item this}}
+
+{{/each}}

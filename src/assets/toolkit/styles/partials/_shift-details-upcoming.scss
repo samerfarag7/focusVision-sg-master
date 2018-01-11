@@ -1,0 +1,41 @@
+.shift-details-upcoming {
+    width: 370px;
+
+    .header {
+        border-bottom: solid 1px $otherGrey;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.36;
+        letter-spacing: 0.6;
+
+        .label {
+            text-align: left;
+            font-size: 14px;
+            color: $indigo;
+        }
+
+        .label-active {
+            color: $lightBlue;
+        }
+    }
+
+    .drop-container {
+        .dropdown-container {
+            width: 45%;
+        }
+    }
+
+    .mdc-list-shift {
+        padding-left: 0;
+        padding-right: 0;
+        box-shadow: none;
+    }
+
+    .text {
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.6px;
+        color: $darkerGrey;
+    }
+}

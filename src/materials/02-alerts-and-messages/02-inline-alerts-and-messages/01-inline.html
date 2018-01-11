@@ -1,0 +1,20 @@
+<div class="alert{{#if alert-type}} {{alert-type}}{{else}} alert-success{{/if}}" role="alert" id="inline-alert-msg">
+    <div class="d-flex d-row align-items-center pr-5 pl-4{{#if padding-class}} {{padding-class}}{{else}} py-3{{/if}}">
+        <g>
+            <svg class="icon{{#if icon-type}} {{icon-type}}{{^}} icon-success{{/if}}" width="24" height="24" aria-label="">
+                <use xlink:href="#{{#if icon-type}}{{icon-type}}{{^}}icon-success{{/if}}"></use>
+            </svg>
+        </g>
+        <div>
+            <p class="ml-3 body-2-medium alert-title">{{#if inline-title}}{{inline-title}}{{else}}This is a success message.{{/if}}</p>
+        </div>
+    </div>{{#if description}}<div class="alert-body body-2-medium pb-4">
+        <p class="body-2 mt-1">{{description}}</p>{{#if link}}
+        <p class="mt-2">
+            <a class="body-2-medium link-secondary">{{link}}</a>
+        </p>{{/if}}
+    </div>{{^}}{{#if link}}
+    <div class="alert-body mt-1 pb-4">
+        <a class="body-2-medium link-secondary">{{link}}</a>
+    </div>{{/if}}{{/if}}
+</div>

@@ -1,0 +1,16 @@
+[
+{
+    name: "Item 1",
+    disabled: false,
+    disabledText: ""
+},
+{
+    name: "Item 2",
+    disabled: false,
+    disabledText: ""
+},
+{
+    name: "Item 3",
+    disabled: false,
+    disabledText: ""
+}]

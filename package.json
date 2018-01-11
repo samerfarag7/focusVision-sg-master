@@ -1,0 +1,75 @@
+{
+  "name": "fabricator",
+  "version": "1.2.2",
+  "description": "A tool for building website UI toolkits",
+  "homepage": "http://fbrctr.github.io/",
+  "main": "README.md",
+  "scripts": {
+    "gulp": "gulp",
+    "prestart": "npm install",
+    "build": "npm install && gulp",
+    "start": "gulp --dev",
+    "test": "npm run build"
+  },
+  "keywords": [
+    "toolkit",
+    "styleguide",
+    "framework",
+    "scaffold",
+    "patterns",
+    "library"
+  ],
+  "author": "Luke Askew",
+  "licenses": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbrctr/fabricator.git"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-install": "2.1.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.7.1",
+    "del": "^1.1.1",
+    "fabricator-assemble": "DesignMapCode/fabricator-assemble",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-all": "^0.9.7",
+    "gulp-rev-collector": "^1.0.5",
+    "gulp-rev-napkin": "^0.1.0",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-sass": "^2.0.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.4",
+    "imports-loader": "^0.6.3",
+    "picomodal": "^3.0.0",
+    "pikaday": "1.6.1",
+    "run-sequence": "^1.0.2",
+    "script-loader": "^0.6.1",
+    "webpack": "^1.8.11"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "coffeescript": "^1.12.7",
+    "handlebars-helpers": "^0.9.8",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "popper.js": "^1.12.9",
+    "progressbar.js": "^1.0.1",
+    "tippy.js": "^1.2.1"
+  }
+}

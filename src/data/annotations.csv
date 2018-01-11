@@ -1,0 +1,16 @@
+[
+ {
+   "FIELD1": "",
+   "name": "input-field",
+   "description": "<p>All input fields should be preceded with a <code>LABEL</code> with matching <code>for={id}</code> and input <code>id={id}</code> to assist screen readers.</p><p>For input fields which use a placeholder for input intent instead of a visible label, add the class <code>.sr-only</code> to create an invisible-but-detectable label. Screen readers which encounter an input described only by placeholder text will void the placeholder the moment the input receives focus, before it can be read.</p>",
+   "annotation-heading": "",
+   "annotation-description": ""
+ },
+ {
+   "FIELD1": "",
+   "name": "time",
+   "description": "<p>Use the <code>TIME</code> microformat element to markup time and dates. This can assist browsers that attempt to add events to a user’s own calendar. A Thai-localised browser could offer to transform Gregorian dates into Thai Buddhist era dates. A Japanese browser could localise <time>16:00</time> to 16:00時.</p>",
+   "annotation-heading": "",
+   "annotation-description": ""
+ }
+]

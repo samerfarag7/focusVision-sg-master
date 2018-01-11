@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Menus
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Menus</h1>
+    <ul>
+        {{#each materials.16-menus.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.16-menus.items}}
+
+{{> f-item this}}
+
+{{/each}}

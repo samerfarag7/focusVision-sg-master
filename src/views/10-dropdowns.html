@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Dropdowns
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Dropdowns</h1>
+    <ul>
+        {{#each materials.10-dropdowns.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.10-dropdowns.items}}
+
+{{> f-item this}}
+
+{{/each}}

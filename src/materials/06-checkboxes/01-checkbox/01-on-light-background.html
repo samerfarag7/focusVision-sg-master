@@ -1,0 +1,19 @@
+<div class="custom-control custom-checkbox{{#if form-field-class}} {{form-field-class}}{{/if}}{{#if disabled}} checkbox-disabled{{/if}}{{#if error}} checkbox-error{{/if}}">
+    <input type="checkbox" class="custom-control-input" id="{{#if id}}{{id}}{{^}}checkbox{{/if}}"{{#if checked}} checked{{/if}}{{#if disabled}} {{disabled}}{{/if}}>
+    <label class="custom-control-label" for="{{#if id}}{{id}}{{^}}checkbox{{/if}}">
+        <svg class="checkbox-checkmark" viewBox="-4 -6 20 20">
+            <g fill="none">
+                <path stroke="#fff" stroke-width="2" d="M1.5 3.75l3 3 6-6" />
+            </g>
+        </svg>
+        <span>{{#if label}}{{label}}{{^}}Default{{/if}}</span>
+    </label>
+</div>
+{{#if error}}
+<div class="checkbox-validation-helptext py-3 pl-4 pr-5 d-flex d-row" id="validation-msg">
+    <svg class="icon icon-error" width="{{#if icon-width}}{{icon-width}}{{^}}24{{/if}}" height="{{#if icon-width}}{{icon-width}}{{^}}24{{/if}}" aria-label="Validation error detected">
+        <use xlink:href="#icon-error"></use>
+    </svg>
+	<p class="body-2-medium ml-3">{{error}}</p>
+</div>
+{{/if}}

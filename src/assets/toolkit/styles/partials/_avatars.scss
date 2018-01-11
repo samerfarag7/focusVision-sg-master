@@ -1,0 +1,43 @@
+.avatar.menu-dropdown {
+    .dropdown-toggle {
+        &::after {
+            color: $cadet;
+            display: inline-block;
+            margin-left: 0.625rem;
+        }
+    }
+    .btn-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        transition: $hover-transition;
+        padding: 0;
+        .user-img {
+            width: 1.875rem;
+            height: 1.875rem;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        div.user-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $slate;
+        }
+        .user-name {
+            color: rgba($off-white, .5);
+        }
+        .user-initials {
+            color: $cadet
+        }
+        &:hover {
+            .user-name {
+                color: rgba($off-white, 1);
+            }
+        }
+        &:active {
+            background: none;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Search Auto Suggest Style
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Search Auto Suggest Style</h1>
+    <ul>
+        {{#each materials.19-search-auto-suggest-style.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.19-search-auto-suggest-style.items}}
+
+{{> f-item this}}
+
+{{/each}}

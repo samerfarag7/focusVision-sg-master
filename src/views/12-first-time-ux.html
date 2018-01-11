@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: First Time UX
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">First Time UX</h1>
+    <ul>
+        {{#each materials.12-first-time-UX.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.12-first-time-UX.items}}
+
+{{> f-item this}}
+
+{{/each}}

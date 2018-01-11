@@ -1,0 +1,15 @@
+<div class="f-item-display">
+  {{#if description}}<div data-f-toggle="notes" class="f-description">{{{description}}}
+</div>{{/if}}
+<div class="f-item-preview">
+	{{{material @key @root}}}
+</div>
+<div class="f-item-hidden" data-f-toggle="code">
+  {{#if notes}}<div class="f-item-notes" >
+    {{{notes}}}
+  </div>{{/if}}
+  <div class="f-item-code">
+    <pre><code class="language-markup line-numbers">{{material @key @root}}</code></pre>
+  </div>
+</div>
+</div>

@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Links
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Links</h1>
+    <ul>
+        {{#each materials.13-links.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.13-links.items}}
+
+{{> f-item this}}
+
+{{/each}}

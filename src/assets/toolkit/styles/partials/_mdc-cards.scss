@@ -1,0 +1,137 @@
+.mdc-card {
+    //*---------------------------------------*
+    //  Status Past
+    //*---------------------------------------*
+    &.status-past {
+        background-color: $offWhite;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+
+        .mdc-card__title, .mdc-card__title--large, .mdc-card__subtitle, .mdc-card__supporting-text, .mdc-card__actions {
+            color: $grey;
+        }
+
+        .mdc-card__actions img {
+            opacity: 0.3;
+        }
+
+        &:hover, &.selected {
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+
+            .mdc-card__title, .mdc-card__title--large {
+                color: $darkerGrey;
+            }
+
+            .mdc-card__subtitle, .mdc-card__supporting-text, .mdc-card__actions {
+                color: $darkGrey;
+            }
+
+            .mdc-card__actions img {
+                opacity: 1;
+            }
+        }
+
+        &.selected {
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: solid 2px $lightGrey;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    //*---------------------------------------*
+    //  Status Active
+    //*---------------------------------------*
+    &.status-active {
+        background-color: rgba(23, 168, 235, 0.15);
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: 0 2px 6px 0 $lightGrey;
+        }
+
+        &.selected {
+            box-shadow: 0 2px 6px 0 $lightGrey;
+        }
+    }
+
+    //*---------------------------------------*
+    //  Status Future
+    //*---------------------------------------*
+    &.status-future {
+        background-color: $lighterGrey;
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: 0 2px 6px 0 $lightGrey;
+        }
+
+        &.selected {
+            box-shadow: none;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: solid 2px $grey;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    //*---------------------------------------*
+    //  Status Open
+    //*---------------------------------------*
+    &.status-open {
+        box-shadow: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: solid 3px $lightRed;
+            border-radius: 2px;
+        }
+
+        .mdc-card__primary {
+            padding-bottom: 0;
+        }
+
+        .mdc-card__actions {
+            margin: 6px 6px;
+            padding: 4px 6px;
+            background-color: $lightRed;
+            border-radius: 4px;
+
+            p {
+                font-weight: 600;
+                color: $darkerGrey;
+            }
+        }
+
+        &:hover, &.selected {
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        &.selected {
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+
+            &::before {
+                border-color: $red;
+            }
+        }
+    }
+}

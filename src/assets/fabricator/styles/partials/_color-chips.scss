@@ -1,0 +1,195 @@
+.list-group.color-style {
+    border-radius: $border-radius;
+    display: inline-flex;
+    margin-right: 1rem;
+
+    .list-group-item {
+        border: none;
+        height: 5.75rem;
+        width: 12.1875rem;
+
+        &.white-color {
+            border: solid 1px #e9edf0;
+        }
+
+        p {
+            color: $slate;
+            font-size: $font-size-xs;
+            margin-top: .5rem;
+            opacity: .6;
+
+            &.title-text {
+                font-weight: $font-weight-medium;
+                opacity: 1;
+            }
+        }
+
+        &.dark-color {
+            p {
+                color: $white;
+            }
+        }
+
+        &.primary-color {
+            p {
+                color: $ink;
+
+                &.title-text {
+                    opacity: .8;
+                }
+            }
+        }
+
+        &.gradient-color {
+            height: 11.5rem;
+
+            p {
+                opacity: .8;
+
+                &.title-text {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.f-typography-box {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div:first-child {
+        width: 140px;
+    }
+
+    > div:nth-child(2) {
+        flex: 1;
+        margin-right: 30px;
+        padding-right: 20px;
+        max-width: 460px;
+    }
+}
+
+.f-preview-character {
+    font-size: 90px;
+    line-height: 1;
+}
+
+.f-font-preview {
+    display: block;
+    font-size: 24px;
+    line-height: 1.4;
+
+    @media only screen and (max-width: 400px) {
+        margin-bottom: 15px;
+        border-right: 0;
+    }
+}
+
+.f-font-name {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.f-font-weight, .f-font-style {
+    margin-top: 3px;
+    font-size: 13px;
+
+    label {
+        color: $cadet;
+    }
+}
+
+.f-item-htags {
+    > div {
+        margin: 30px 0;
+
+        > div:first-child {
+            width: 138px;
+            font-size: 18px;
+        }
+
+        > div:nth-child(2) {
+            flex: 1;
+            margin-right: 30px;
+            padding-right: 20px;
+            max-width: 510px;
+
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 4px;
+                max-width: 100%;
+                border-right: 0;
+            }
+        }
+
+        > div:last-child {
+            font-size: 13px;
+
+            label {
+                color: $cadet;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.f-icons {
+    > div {
+        margin: 20px 20px 20px 0;
+        width: 160px;
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: #brand-green;
+        }
+
+        span {
+            display: block;
+            margin-top: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        > div {
+            margin: 0 0 20px;
+            width: 50%;
+        }
+    }
+}
+
+.f-color-chips {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-color-chip {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    border-top-width: 8em;
+    border-top-style: solid;
+    border-bottom-width: 0;
+    border-bottom-style: solid;
+    background-color: $white;
+    font-weight: 700;
+    font-size: 0.75em;
+    padding: 1em;
+    margin-bottom: 2em;
+  box-sizing: border-box;
+
+    @media (min-width: 60em) {
+        flex-basis: 13em;
+    }
+
+    .f-color-chip__color {
+        background-color: $white;
+        content: attr(data-color);
+        font-weight: 400;
+    }
+}

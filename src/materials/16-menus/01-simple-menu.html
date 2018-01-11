@@ -1,0 +1,41 @@
+<div class="dropdown menu-dropdown{{#if form-field-class}} {{form-field-class}}{{/if}}">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="{{#if id}}{{id}}{{^}}simpleMenuButton{{/if}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trigger</button>
+    <div class="dropdown-menu" aria-labelledby="{{#if id}}{{id}}{{^}}simpleMenuButton{{/if}}">
+        {{#if large}}
+        {{#each menu-large}}
+        <a class="dropdown-item"><span>{{name}}</span><p class="item-text">{{text}}</p></a>
+        {{/each}}
+        {{^}}
+        {{#if divider}}
+        {{#each menu-divider}}
+        <div class="section">
+            {{#each items}}
+            <a class="dropdown-item"><span>{{name}}</span></a>
+            {{/each}}
+        </div>
+        {{/each}}
+        {{^}}
+        {{#if sections}}
+        {{#each menu-sections}}
+        <div class="section">
+            <p>{{name}}</p>
+            {{#each items}}
+            <a class="dropdown-item"><span>{{name}}</span></a>
+            {{/each}}
+        </div>
+        {{/each}}
+        {{^}}
+        {{#if scroll}}
+        {{#each menu-scroll}}
+        <a class="dropdown-item"><span>{{name}}</span></a>
+        {{/each}}
+        {{^}}
+        {{#each menu-simple}}
+        <a class="dropdown-item"><span>{{name}}</span></a>
+        {{/each}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+    </div>
+</div>

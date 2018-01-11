@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Logo Branding
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Logo Branding</h1>
+    <ul>
+        {{#each materials.15-logo-branding.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.15-logo-branding.items}}
+
+{{> f-item this}}
+
+{{/each}}

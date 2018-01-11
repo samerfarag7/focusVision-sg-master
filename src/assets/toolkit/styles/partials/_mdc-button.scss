@@ -1,0 +1,208 @@
+//*---------------------------------------*
+//  MDC Button
+//*---------------------------------------*
+/*
+.mdc-button {
+    padding: 10px 20px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    color: $ink;
+    text-transform: none;
+    background-color: $light-brand-green;
+    -webkit-transition: $hover-transition;
+    transition: $hover-transition;
+
+
+    cursor: pointer;
+
+    svg {
+        fill: $ink;
+    }
+
+    &:hover {
+        text-decoration: none;
+        background-color: $lighter-brand-green;
+    }
+
+    &:disabled {
+        color: $white;
+        background-color: $sliver;
+        cursor: not-allowed;
+    }
+
+    &--small {
+        padding: 6px 15px 7px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    &--large {
+        padding: 14px 24px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    &--primary {
+        color: $ink;
+        background-color: $light-brand-green;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px 0 $color-box-shadow;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $lighter-brand-green;
+        }
+
+        &:disabled {
+            color: $white;
+            background-color: $lightGrey;
+        }
+
+    }
+
+    &--standard {
+        padding: 10px 20px;
+        border: solid 1px rgba($slate, .5);
+        border-radius: 4px;
+        font-size: 14px;
+        background-color: $white;
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+            border-color: $slate;
+            background-color: $slate;
+        }
+
+        &:disabled {
+            color: rgba($slate, .3);
+            background-color: rgba($slate, .1);
+            cursor: not-allowed;
+        }
+
+        &-dark {
+            border: solid 1px rgba($off-white, .5);
+            background-color: $ink;
+            color: $white;
+
+            &:hover {
+                border-color: $white;
+                color: $ink;
+                background-color: $white;
+            }
+
+            &:disabled {
+                color: rgba($off-white, .3);
+                background-color: rgba($off-white, .2);
+                cursor: not-allowed;
+            }
+        }
+
+    }
+
+    &-utility {
+        padding: 10 20px;
+        color: $slate;
+        font-size: 14px;
+        background-color: rgba($slate, .08);
+
+        &:hover {
+            text-decoration: none;
+            color: $slate;
+            border-color: $slate;
+            background-color: rgba($slate, .16);
+        }
+
+        &:disabled {
+            color: rgba($slate, .3);
+            background-color: rgba($slate, .1);
+            cursor: not-allowed;
+        }
+
+        &-dark {
+            background-color: rgba($off-white, .2);
+            color: $off-white;
+
+            &:hover {
+                background-color: rgba($off-white, .3);
+                color: $off-white;
+            }
+
+            &:disabled {
+                color: rgba($off-white, .3);
+                background-color: rgba($off-white, .2);
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &--ghost {
+        padding: 15 20px;
+        color: $slate;
+        font-size: 14px;
+        background: none;
+
+        &:hover {
+            text-decoration: none;
+            background-color: rgba($slate, .08);
+
+            svg {
+                fill: $slate;
+            }
+        }
+
+        &:disabled {
+            color: rgba($slate, .3);
+            background-color: inherit;
+            cursor: not-allowed;
+
+            svg {
+                fill: rgba($slate, .3);
+            }
+        }
+
+        svg {
+            fill: $slate;
+        }
+        
+        &-dark {
+            background: none;
+            color: $off-white;
+
+            &:hover {
+                background-color: rgba($off-white, .16);
+                color: $off-white;
+
+                svg {
+                    fill: $off-white;
+                }
+            }
+
+            svg {
+                fill: $off-white;
+            }
+
+            &:disabled {
+                color: rgba($off-white, .3);
+                background: none;
+                cursor: not-allowed;
+
+                svg {
+                    fill: rgba($off-white, .3);
+                }
+            }
+        }
+    }
+
+    &.mdc-button:after,
+    &.mdc-button:before,
+    &.mdc-button:visited,
+    &.mdc-button__background:after,
+    &.mdc-button__background:before,
+    &.mdc-button__background:visited {
+        background: none;
+    }
+}*/

@@ -1,0 +1,35 @@
+.custom-file {
+    border: 2 dashed $silver;
+    width: 100%;
+    height: 100%;
+}
+
+// custom file
+.custom-file-input {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+    ~ .custom-file-label {
+        border-color: $color;
+
+        &::before { border-color: inherit; }
+    }
+
+    ~ .#{$state}-feedback,
+    ~ .#{$state}-tooltip {
+        display: block;
+    }
+
+    &:focus {
+        ~ .custom-file-label {
+        box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
+        }
+    }
+    }
+}
+
+.custom-file {
+    border: 2px dashed $silver;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}

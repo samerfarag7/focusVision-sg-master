@@ -1,0 +1,207 @@
+//*---------------------------------------*
+//  Typography
+//*---------------------------------------*
+body {
+    color: $bodyColor;
+    font-family: $font-family;
+    text-align: left;
+
+}
+
+a {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-xs;
+    color: $purple;
+    cursor: pointer;
+    -webkit-transition: $hover-transition;
+    transition: $hover-transition;
+
+    &:hover {
+        text-decoration: none;
+        color: $dark-purple;
+    }
+
+    &.link--secondary {
+        color: $pewter;
+        text-decoration: underline;
+    
+        &:hover {
+            color: $ink;
+            text-decoration: underline;
+        }
+    }
+
+    &.link-dark--background {
+        color: $silver;
+        text-decoration: underline;
+    
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+}
+
+p {
+    font-size: 16px;
+
+    &.body-2 {
+        margin: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* --Font Styles-- */
+//Heading Styles
+.headline-3 {
+        font-size: $font-size-xxxl;
+        font-weight: $font-weight-regular;
+        line-height: $line-height-xxxl;
+}
+
+.headline-2 {
+        font-size: $font-size-xxl;
+        font-weight: $font-weight-regular;
+        line-height: $line-height-xxl;
+}
+
+.headline-1 {
+        font-size: $font-size-xl;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-xl;
+}
+
+.title-3 {
+        font-size: $font-size-l;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-l;
+
+}
+
+.title-2 {
+        font-size: $font-size-m;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-m;
+
+}
+
+.title-1 {
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-base;
+
+}
+
+.subheading-3 {
+        font-size: $font-size-xs;
+        font-weight: $font-weight-black;
+        line-height: $line-height-xs;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+}
+
+.subheading-2 {
+        font-size: $font-size-xxs;
+        font-weight: $font-weight-black;
+        line-height: $line-height-xxs;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+}
+
+.subheading-1 {
+        font-size: $font-size-xxxs;
+        font-weight: $font-weight-black;
+        line-height: $line-height-xxxs;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+}
+
+//Body Styles
+.body-4 {
+    font-size: $font-size-m;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-m;
+
+    &-medium {
+        font-size: $font-size-m;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-m;
+    }
+}
+
+.body-3 {
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+
+    &-medium {
+        font-size: $font-size-base;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-base;
+    }
+}
+
+.body-2 {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-xs;
+
+    &-medium {
+        font-size: $font-size-xs;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-xs;
+    }
+}
+
+.body-1 {
+    font-size: $font-size-xxs;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-xxs;
+
+    &-medium {
+        font-size: $font-size-xxs;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-xxs;
+    }
+}
+
+//Numeral Styles
+.numeral-6 {
+    font-size: $font-size-xxxl;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-xxxl;
+}
+
+.numeral-5 {
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-xxl;
+}
+
+.numeral-4 {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-xl;
+}
+
+.numeral-3 {
+    font-size: $font-size-l;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-l;
+}
+
+.numeral-2 {
+    font-size: $font-size-m;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-m;
+}
+
+.numeral-1 {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
+}

@@ -1,0 +1,128 @@
+//Colors
+//
+//Primary Colors
+$brand-green: #00cc52;
+$light-brand-green: #3fe065;
+$lighter-brand-green: #75eb71;
+
+// Greys
+$ink: #16263b;
+$slate: #3e5467;
+$pewter: #627585;
+$cadet: #8394a3;
+
+$silver: #cbd2d6;
+$pale-grey: #e4e8eb;
+$off-white: #F7F9FA;
+$white: #ffffff;
+
+// System Colors
+$green: #39a84c;
+$light-green: #CEF5D4;
+
+$red: #f5496c;
+$light-red: #FFDBE2;
+
+$orange: #e07a04;
+$light-orange: #FFEAD1;
+
+$blue: #428fdb;
+$light-blue: #D4E7FA;
+
+// Secondary Colors
+$dark-purple: #5641cc;
+$purple: #725ee0;
+
+// Supplimentary Colors
+$black: #000000;
+$pink: #DD4A68;
+$brown: #a67f59;
+
+// Gradients
+$green-gradient: linear-gradient(111deg, #00c753, #00d4e8);
+$blue-gradient: linear-gradient(111deg, #00d4e8, #786ce9);
+$purple-gradient: linear-gradient(111deg, #a379ff, #786ce9);
+
+// Loading
+$loading-blue: #00d4e8;
+$loading-green: #00c753;
+$loading-grey: #d7dde0;
+$loading-gradient: left, #00c753 0%, #00d4e8 100%;
+
+// Box Spacing and Styling
+//
+// Box Corners
+$border-radius-l:             6px;
+$border-radius:               4px;
+$border-radius-s:             2px;
+
+// Box Shadows
+$box-shadow-subtle:           0 1px 3px 0 rgba($ink, 0.08);
+$box-shadow-close:            0 2px 6px 0 rgba($ink, 0.14);
+$box-shadow-raised:           0 3px 8px 0 rgba($ink, 0.2);
+$box-shadow-distant:          0 4px 12px 0 rgba($ink, 0.28);
+
+// Font Variables
+//
+// Font Families
+$font-family:                 'Roboto', sans-serif !default;
+$font-family-code:            'Menlo', 'Andale Mono', 'Ubuntu Mono', monospace !default;
+
+// Font Weights
+$font-weight-normal:          400 !default;
+$font-weight-regular:         $font-weight-normal;
+$font-weight-medium:          500 !default;
+$font-weight-bold:            700 !default;
+$font-weight-black:           900 !default;
+
+// Font Size
+// Assumes the browser default, typically `16px`
+$font-size-xxxl:   3rem !default;
+$font-size-xxl:   2.25rem !default;
+$font-size-xl:   1.75rem !default;
+$font-size-l:   1.375rem !default;
+$font-size-m:   1.125rem !default;
+$font-size-base: 1rem !default; //small
+$font-size-xs:   .875rem !default;
+$font-size-xxs:   .75rem !default;
+$font-size-xxxs:   .6875rem !default;
+
+// Line Height
+// Should always be paired with the coordinating font size
+$line-height-xxxl:   4rem !default;
+$line-height-xxl:   3rem !default;
+$line-height-xl:   2.25rem !default;
+$line-height-l:   1.875rem !default;
+$line-height-m:   1.5rem !default;
+$line-height-base: 1.375rem !default; //small
+$line-height-xs:   1.25rem !default;
+$line-height-xxs:   1.0625rem !default;
+$line-height-xxxs:   .9375rem !default;
+
+// Form states and alerts
+//
+// Alert Spacing
+$alert-padding-x:             1.25rem !default;
+$alert-padding-y:             .875rem !default;
+$alert-border-radius:         $border-radius !default;
+
+// Alert Links
+$alert-link-font-size:        $font-size-xs !default;
+$alert-link-font-weight:      $font-weight-medium !default;
+$alert-link-line-height:      $line-height-xs !default;
+
+// Alert Background
+$alert-success-bg:            $light-green !default;
+$alert-info-bg:               $light-blue !default;
+$alert-warning-bg:            $light-orange !default;
+$alert-error-bg:              $light-red !default;
+
+// Alert Background
+$alert-success-icon:          $green !default;
+$alert-info-icon:             $blue !default;
+$alert-warning-icon:          $orange !default;
+$alert-error-icon:            $red !default;
+
+// Animation 
+// Button and Link Trisitions
+$hover-transition: all 0.3s ease 0s;

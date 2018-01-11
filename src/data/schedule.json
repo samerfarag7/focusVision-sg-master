@@ -1,0 +1,580 @@
+{
+    "days": [
+    {
+        "number": 20,
+        "day": "SUN",
+        "active": false,
+        "ot": false,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": [
+            {
+                "cardClass": "past",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": [
+            {
+                "cardClass": "past",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": true
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": false
+            }]
+        }]
+    },
+    {
+        "number": 21,
+        "day": "MON",
+        "active": false,
+        "ot": false,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": [
+            {
+                "cardClass": "past",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": [
+            {
+                "cardClass": "past",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": true
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": false
+            }]
+        }]
+    },
+    {
+        "number": 22,
+        "day": "TUE",
+        "active": false,
+        "ot": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": [
+            {
+                "cardClass": "past",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": [
+            {
+                "cardClass": "past",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": true
+            },
+            {
+                "cardClass": "past",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": [
+            {
+                "cardClass": "past",
+                "active": false,
+                "multipleUsers": false
+            }]
+        }]
+    },
+    {
+        "number": 23,
+        "day": "WED",
+        "active": true,
+        "today": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": [
+            {
+                "cardClass": "active",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "future",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales",
+                "active": false
+            }]
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": [
+            {
+                "cardClass": "future",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": true,
+                "multipleUsers": false,
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": [
+            {
+                "cardClass": "active",
+                "active": false,
+                "multipleUsers": false,
+            },
+            {
+                "cardClass": "active",
+                "active": false,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": [
+            {
+                "cardClass": "active",
+                "active": false,
+                "multipleUsers": true
+            },
+            {
+                "cardClass": "future",
+                "active": false,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": [
+            {
+                "cardClass": "future",
+                "active": false,
+                "multipleUsers": false
+            }]
+        }]
+    },
+    {
+        "number": 24,
+        "day": "THU",
+        "active": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": [
+            {
+                "cardClass": "future",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "future",
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales",
+                "active": false
+            }]
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": [
+            {
+                "cardClass": "future",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false,
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": [
+            {
+                "cardClass": "future",
+                "active": false,
+                "multipleUsers": false,
+            },
+            {
+                "cardClass": "future",
+                "active": false,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": [
+            {
+                "cardClass": "future",
+                "active": false,
+                "multipleUsers": true
+            },
+            {
+                "cardClass": "future",
+                "active": false,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": [
+            {
+                "cardClass": "future",
+                "active": false,
+                "multipleUsers": false
+            }]
+        }]
+    },
+    {
+        "number": 25,
+        "day": "FRI",
+        "active": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": [
+            {
+                "cardClass": "future",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "open",
+                "open": true,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales",
+                "active": false
+            }]
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": [
+            {
+                "cardClass": "future",
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": true,
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": [
+            {
+                "cardClass": "future",
+                "active": false,
+                "multipleUsers": false,
+            },
+            {
+                "cardClass": "open",
+                "open": true,
+                "active": false,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": [
+            {
+                "cardClass": "open",
+                "open": true,
+                "active": false,
+                "multipleUsers": true
+            },
+            {
+                "cardClass": "future",
+                "active": false,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": [
+            {
+                "cardClass": "open",
+                "open": true,
+                "active": false,
+                "multipleUsers": false
+            }]
+        }]
+    },
+    {
+        "number": 26,
+        "day": "SAT",
+        "active": true,
+        "events": [
+        {
+            "title": "Menards Front Door",
+            "data": [
+            {
+                "cardClass": "open",
+                "open": true,
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false,
+                "multipleUsers": false
+            },
+            {
+                "cardClass": "open",
+                "open": true,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales",
+                "active": false
+            }]
+        },
+        {
+            "title": "Menards Lumber yard",
+            "data": [
+            {
+                "cardClass": "open",
+                "open": true,
+                "cardtitle": "8:00 AM - 4:00 PM",
+                "subtitle": "Basic cleaning",
+                "active": false
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Randy's Mediterranean Cuisine",
+            "data": [
+            {
+                "cardClass": "open",
+                "open": true,
+                "active": false
+            },
+            {
+                "cardClass": "open",
+                "open": true,
+                "active": false,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "divider": true
+        },
+        {
+            "title": "Willis Tower Floor 32",
+            "data": [
+            {
+                "cardClass": "open",
+                "open": true,
+                "active": false
+            },
+            {
+                "cardClass": "open",
+                "open": true,
+                "active": false,
+                "cardtitle": "4:00 PM - 12:00 AM",
+                "subtitle": "Basic cleaning",
+                "username": "Sonia Gonzales"
+            }]
+        },
+        {
+            "title": "Willis Tower Floor 67",
+            "data": [
+            {
+                "cardClass": "open",
+                "open": true,
+                "active": false
+            }]
+        }]
+    }]
+}

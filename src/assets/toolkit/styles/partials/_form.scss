@@ -1,0 +1,31 @@
+.form-group-basic {
+    & div.form-group {
+        @extend .mb-5;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.form-check {
+    padding-left: 0;
+}
+
+input.form-control {
+    height: 38px;
+    padding: 0px 14px;
+    font-size: 14px;
+    color: #16263b;
+    background-color: #ffffff;
+    border: solid 1px #cbd2d6 !important;
+    border-radius: 4px;
+}
+
+.form-control,
+.custom-select,
+.custom-file {
+    &:focus{
+        border-color: $brand-green !important;
+    }
+}

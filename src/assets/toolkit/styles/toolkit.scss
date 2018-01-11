@@ -1,0 +1,84 @@
+//*---------------------------------------*
+//  Bootstrap 4
+//*---------------------------------------*
+@import "bootstrap/bootstrap";
+
+//*---------------------------------------*
+//  Material Design
+//*---------------------------------------*
+// @import "libs/material-components-web.min";
+@import "material/button/mdc-button";
+@import "material/card/mdc-card";
+@import "material/checkbox/mdc-checkbox";
+@import "material/dialog/mdc-dialog";
+@import "material/drawer/mdc-drawer";
+@import "material/elevation/mdc-elevation";
+@import "material/fab/mdc-fab";
+@import "material/form-field/mdc-form-field";
+@import "material/grid-list/mdc-grid-list";
+@import "material/icon-toggle/mdc-icon-toggle";
+@import "material/layout-grid/mdc-layout-grid";
+@import "material/linear-progress/mdc-linear-progress";
+@import "material/list/mdc-list";
+@import "material/menu/mdc-menu";
+@import "material/radio/mdc-radio";
+@import "material/rtl/mixins";
+@import "material/select/mdc-select";
+@import "material/slider/mdc-slider";
+@import "material/snackbar/mdc-snackbar";
+@import "material/switch/mdc-switch";
+@import "material/tabs/mdc-tabs";
+@import "material/textfield/mdc-textfield";
+@import "material/toolbar/mdc-toolbar";
+@import "material/typography/mdc-typography";
+
+
+//*---------------------------------------*
+//  Bootstrap imports
+// 
+//  Flex + spacing + text utilities
+//*---------------------------------------*
+@import "libs/bootstrap-utility-classes";
+
+//*---------------------------------------*
+//  General
+//*---------------------------------------*
+@import "partials/variables";
+@import "partials/helpers";
+@import "partials/pages";
+
+//*---------------------------------------*
+//  Web Components
+//*---------------------------------------*
+@import "partials/alerts";
+@import "partials/badge";
+@import "partials/checkbox";
+@import "partials/color";
+@import "partials/dropdowns";
+@import "partials/label";
+@import "partials/loader";
+@import "partials/mdc-button";
+@import "partials/mdc-cards";
+@import "partials/mdc-modal";
+@import "partials/mdc-notifications";
+@import "partials/mdc-radio";
+@import "partials/mdc-search";
+@import "partials/textfield";
+@import "partials/mdc-tooltip";
+@import "partials/menus";
+@import "partials/modal";
+@import "partials/navigation";
+@import "partials/pikaday";
+@import "partials/progress-bar";
+@import "partials/range";
+@import "partials/segment-control";
+@import "partials/bootstrap-select";
+@import "partials/_shift-details-past";
+@import "partials/_shift-details-upcoming";
+@import "partials/time";
+@import "partials/tooltips";
+@import "partials/tag";
+@import "partials/form";
+@import "partials/dialog";
+@import "partials/tabs";
+@import "partials/avatars";

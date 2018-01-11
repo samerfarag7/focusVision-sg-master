@@ -1,0 +1,94 @@
+.custom-radio {
+    .radio-checkmark {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        top: 0;
+        width: 1.25rem;
+        z-index: 1;
+    }
+
+    .custom-control-label::before {
+        background-color: transparent;
+        border: solid .0675rem $silver;
+        height: 1.25rem;
+        top: 0;
+        width: 1.25rem;
+    }
+
+    &:hover .custom-control-label::before {
+        border-color: $brand-green;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+        &::after {
+            background-color: $white;
+            background-image: none;
+            border: solid .0675rem $brand-green;
+            border-radius: 50%;
+            height: 1.25rem;
+            top: 0;
+            width: 1.25rem;
+        }
+
+        .radio-checkmark {
+            opacity: 1;
+        }
+    }
+
+    label {
+        padding-left: .5rem;
+    }
+}
+
+.radio-dark {
+    .custom-control-label::before {
+        border-color: $cadet;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+        &::after {
+            background-color: $ink;
+        }
+    }
+}
+
+.radio-disabled {
+    cursor: default;
+    pointer-events: none;
+
+    .radio-checkmark circle {
+        fill: $pale-grey;
+    }
+
+    .custom-control-input:disabled ~ .custom-control-label::before {
+        background-color: $off-white;
+        border-color: $pale-grey;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+        &::after {
+            background-color: $off-white;
+            border-color: $pale-grey;
+        }
+    }
+}
+
+.radio-dark.radio-disabled {
+    .radio-checkmark circle {
+        fill: rgba($off-white, .2);
+    }
+
+    .custom-control-input ~ .custom-control-label::before {
+        background-color: transparent;
+        border-color: rgba($off-white, .2);
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+        &::after {
+            background-color: transparent;
+            border-color: rgba($off-white, .0);
+        }
+    }
+}

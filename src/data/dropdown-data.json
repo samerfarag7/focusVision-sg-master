@@ -1,0 +1,21 @@
+[
+{
+    name: "Option 1",
+    disabled: false,
+    disabledText: ""
+},
+{
+    name: "Option 2",
+    disabled: false,
+    disabledText: ""
+},
+{
+    name: "Option 3",
+    disabled: false,
+    disabledText: ""
+},
+{
+    name: "Option 4",
+    disabled: true,
+    disabledText: "Reason for Option 4 disabled"
+}]

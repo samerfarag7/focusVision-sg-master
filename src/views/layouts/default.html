@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js mdc-typography" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>{{#if title}}{{title}}{{^}}FocusVision: Product Style Guide{{/if}}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+    <!-- Add Code Face-->
+    {{#if fabricator}}
+    <link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/fabricator/styles/f.css">
+    {{/if}}
+    <link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/toolkit.css">
+</head>
+
+<body class="page">
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-arrow" viewBox="0 0 45 32">
+                <title>arrow</title>
+                <path d="M37.169 17.591h-34.21c-1.295 0-2.345-1.050-2.345-2.345s1.050-2.345 2.345-2.345h34.21l-8.896-8.896c-0.916-0.916-0.916-2.401 0-3.317s2.401-0.916 3.317 0l12.9 12.9c0.916 0.916 0.916 2.401 0 3.317l-12.9 12.9c-0.916 0.916-2.401 0.916-3.317 0s-0.916-2.401 0-3.317l8.896-8.896z"></path>
+            </symbol>
+            <symbol id="icon-caret" viewBox="0 0 8 4">
+                <title>caret</title>
+                <path d="M0 0h8L4 4z"></path>
+            </symbol>
+            <symbol id="icon-plus-sign" viewBox="0 0 10 10">
+                    <title>plus sign</title>
+                    <path d="M4 4H0v2h4v4h2V6h4V4H6V0H4z"></path>
+            </symbol>
+            <symbol id="icon-cancel-s" viewBox="0 0 20 20">
+                <title>cancel s</title>
+                <path d="M8.6 10l-3.3 3.3l1.4 1.4l3.3-3.3l3.3 3.3l1.4-1.4L11.4 10l3.3-3.3l-1.4-1.4L10 8.6L6.7 5.3L5.3 6.7L8.6 10z"/>                
+            </symbol>
+            <symbol id="icon-info" viewBox="0 0 20 20">
+                <title>info</title>
+                <g>
+                    <circle cx="10" cy="10" r="10"/>
+                    <path fill="#FFF" fill-rule="nonzero" d="M9 8h2v7H9V8zm0-3h2v2H9V5z"/>
+                </g>
+            </symbol>
+            <symbol id="icon-warning" viewBox="0 0 20 17">
+                    <title>warning</title>
+                    <g>
+                        <path d="M10.864.48l8.759 15.016A1 1 0 0 1 18.759 17H1.241a1 1 0 0 1-.864-1.504L9.137.481a1 1 0 0 1 1.727 0z"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M9 12h2v2H9v-2zm0-6h2v5H9V6z"/>
+                    </g>
+            </symbol>
+            <symbol id="icon-success" viewBox="0 0 20 20">
+                    <title>success</title>
+                    <g>
+                        <circle cx="10" cy="10" r="10"/>
+                        <path stroke="#FFF" stroke-linecap="square" stroke-width="2" d="M6.5 10.5l2 2 5-5"/>
+                    </g>
+            </symbol>
+            <symbol id="icon-error" viewBox="0 0 20 20">
+                <title>error</title>
+                <g>
+                    <circle cx="10" cy="10" r="10"/>
+                    <path fill="#FFF" fill-rule="nonzero" d="M9 13h2v2H9v-2zm0-8h2v7H9V5z"/>
+                </g>
+            </symbol>
+            <symbol id="icon-sort" viewBox="0 0 16 14">
+                <title>sort</title>
+                <g fill="none">
+                    <path fill="#3E5467" fill-rule="nonzero" d="M5 9.586l1.293-1.293 1.414 1.414L4 13.414.293 9.707l1.414-1.414L3 9.586V1h2v8.586zm8-5.172V13h-2V4.414L9.707 5.707 8.293 4.293 12 .586l3.707 3.707-1.414 1.414L13 4.414z"/>
+                </g>
+            </symbol>
+            <symbol id="icon-help" viewBox="0 0 20 20">
+                <title>help</title>
+                <g>
+                    <circle fill="#FFF" fill-rule="nonzero" cx="10" cy="10" r="10"/>
+                    <path  d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10zm-1-7v2h2v-2H9zm2-1.2v-.6c0 .034.046-.033.27-.223.088-.076.474-.387.463-.378C12.707 9.802 13.2 9.1 13.2 8c0-1.747-1.432-3-3.2-3-1.768 0-3.2 1.253-3.2 3v.5h2V8c0-.578.482-1 1.2-1s1.2.422 1.2 1c0 .341-.181.6-.733 1.051.031-.026-.382.307-.497.405-.63.538-.97 1.03-.97 1.744v.6h2z"/>
+                </g>
+            </symbol>
+            <symbol id="icon-build-mode" viewBox="0 0 21 21">
+                <title>build-mode</title>
+                <g fill="none">
+                    <path d="M-4-3h28v28H-4z"/>
+                    <path fill="#3E5467" fill-rule="nonzero" d="M4.828 15L6 16.172 18.172 4 17 2.828 4.828 15zM17 0l4 4L6 19l-4-4L17 0zM5 20l-5 1 1-5 4 4z"/>
+                </g>
+            </symbol>
+            <symbol id="icon-dots" viewBox="0 0 16 4">
+                <title>dots</title>
+                <g fill="none">
+                    <path fill="#3E5467" d="M14 3.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-6 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                </g>
+            </symbol>
+            <symbol id="icon-share" viewBox="0 0 18 17">
+                <title>share</title>
+                    <g fill="none">
+                        <path fill="#3E5467" fill-rule="nonzero" d="M9 16.5v-4.3c-4.5 0-8 3.3-9 4.8C-.5 9.5 4 4.8 9 4.8V.5l9 8-9 8zm2-6.3v1.846L14.99 8.5 11 4.954V6.8H9c-2.897 0-5.365 2.002-6.449 5.254C4.458 10.938 6.706 10.2 9 10.2h2z"/>
+                    </g>
+            </symbol>
+            <symbol id="icon-star" viewBox="0 0 20 18">
+                <title>star</title>
+                <g>
+                    <path fill="#3E5467" fill-rule="nonzero" d="M10 12.138l2.924 1.637-.653-3.287 2.46-2.275-3.327-.395L10 4.775 8.596 7.818l-3.327.395 2.46 2.275-.653 3.287L10 12.138zm0 2.292l-5.73 3.208 1.28-6.442L.726 6.737l6.522-.773L10 0l2.75 5.964 6.523.773-4.822 4.46 1.28 6.44L10 14.43z"/>
+                </g>
+            </symbol>
+        </defs>
+    </svg>
+    {{#if fabricator}} {{> f-icons}} {{> f-menu}} {{> f-control-bar}} {{/if}}
+    <div class="f-container">
+        {% body %}
+    </div>
+    {{#if fabricator}}
+    <script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/fabricator/scripts/f.js"></script>
+    {{/if}}
+    <script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/scripts/toolkit.js"></script>
+</body>
+</html>

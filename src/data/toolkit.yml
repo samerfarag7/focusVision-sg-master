@@ -1,0 +1,107 @@
+primaryColors:
+    brandGreen:
+        title: 'Brand Green'
+        hex: '#00cc52'
+    lightBrandGreen:
+        title: 'Light Brand Green'
+        hex: '#3fe065'
+    lighterBrandGreen:
+        title: 'Lighter Brand Green'
+        hex: '#75eb71'
+
+darkGreys:
+    ink:
+        title: 'Ink'
+        hex: '#16263b'
+    slate:
+        title: 'Slate'
+        hex: '#3e5467'
+    pewter:
+        title: 'Pewter'
+        hex: '#627585'
+    cadet:
+        title: 'Cadet'
+        hex: '#8394a3'
+lightGreys:
+    silver:
+        title: 'Silver'
+        hex: '#cbd2d6'
+    paleGrey:
+        title: 'Pale Grey'
+        hex: '#e4e8eb'
+    offWhite:
+        title: 'Off White'
+        hex: '#F7F9FA'
+    white:
+        title: 'White'
+        hex: '#ffffff'
+        white: 'true'
+
+systemColors:
+    green:
+        default:
+            title: 'Green'
+            hex: '#39a84c'
+        light:
+            title: 'Light Green'
+            hex: '#CEF5D4'
+    red:
+        default: 
+            title: 'Red'
+            hex: '#f5496c'
+        light:
+            title: 'Light Red'
+            hex: '#FFDBE2'
+    orange:
+        default: 
+            title: 'Orange'
+            hex: '#e07a04'
+        light:
+            title: 'Light Orange'
+            hex: '#FFEAD1'
+    blue:
+        default:
+            title: 'Blue'
+            hex: '#428fdb'
+        light:
+            title: 'Light Blue'
+            hex: '#D4E7FA'
+
+secondaryColors:
+    darkPurple: 
+        title: 'Dark Purple'
+        hex: '#5641cc'
+    purple:
+        title: 'Purple'
+        hex: '#725ee0'
+
+gradients:
+    greenGradient: 
+        title: 'Green Gradient'
+        hex1: '#00c753'
+        hex2: '#00d4e8'
+    blueGradient:
+        title: 'Blue Gradient'
+        hex1: '#00d4e8'
+        hex2: '#786ce9'
+    purpleGradient:
+        title: 'Purple Gradient'
+        hex1: '#a379ff'
+        hex2: '#786ce9'
+
+icons: [
+    'arrow',
+    'plus-sign',
+    'info',
+    'warning',
+    'success',
+    'error',
+    'cancel-s',
+    'caret',
+    'sort',
+    'star',
+    'share',
+    'dots',
+    'build-mode',
+    'help'
+]

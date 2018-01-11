@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Badges
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Badges</h1>
+    <ul>
+        {{#each materials.04-badges.items}} 
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.04-badges.items}}
+
+{{> f-item this}}
+
+{{/each}}

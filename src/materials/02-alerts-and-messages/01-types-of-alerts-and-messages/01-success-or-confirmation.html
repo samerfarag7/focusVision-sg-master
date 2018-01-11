@@ -1,0 +1,6 @@
+<div class="alert{{#if alert-type}} {{alert-type}}{{else}} alert-success{{/if}} d-flex align-items-center mt-4 py-3 pl-4 pr-5" role="alert">
+    <svg class="icon{{#if icon-type}} {{icon-type}}{{^}} icon-success{{/if}}" width="24" height="24" aria-label="">
+        <use xlink:href="#{{#if icon-type}}{{icon-type}}{{^}}icon-success{{/if}}"></use>
+    </svg>
+    <p class="ml-3 body-2-medium alert-title">{{#if message}}{{message}}{{else}}This is a success message{{/if}}</p>
+</div>

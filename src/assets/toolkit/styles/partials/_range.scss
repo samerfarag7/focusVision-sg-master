@@ -1,0 +1,91 @@
+.slider-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.36;
+        letter-spacing: 0.6px;
+        color: $indigo;
+    }
+
+    .range-value {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.19;
+        color: $darkIndigo;
+    }
+
+    .input-range {
+        outline: none;
+        width: 100%;
+        height: 4px;
+        background-color: #ebebeb;
+        background-image: -webkit-gradient( linear,
+        50% 0%,
+        50% 100%,
+        color-stop(0%, #17a8eb),
+        color-stop(100%, #17a8eb));
+        background-image: -webkit-linear-gradient(#17a8eb, #17a8eb);
+        background-image: -moz-linear-gradient(#17a8eb, #17a8eb);
+        background-image: -o-linear-gradient(#17a8eb, #17a8eb);
+        background-image: linear-gradient(#17a8eb, #17a8eb);
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        -webkit-appearance: none;
+
+        &.full {
+            width: 100%;
+        }
+
+        &::-webkit-slider-runnable-track {
+            box-shadow: none;
+            border: none;
+            background: transparent;
+            -webkit-appearance: none;
+        }
+
+        &::-moz-range-track {
+            box-shadow: none;
+            border: none;
+            background: transparent;
+        }
+
+        &::-moz-focus-outer {
+            border: 0;
+        }
+
+        &::-webkit-slider-thumb {
+            width: 22px;
+            height: 22px;
+            background-color: #ffffff;
+            border: solid 1px #0892d1;
+            border: 0;
+            background: #fff;
+            border-radius: 100%;
+            box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+            -webkit-appearance: none;
+            border: solid 1px #cbcfd1;
+
+            &:hover {
+                border: solid 1px #0892d1;
+            }
+
+            &:active {
+                border: solid 1px #0892d1;
+            }
+        }
+
+        &::-moz-range-thumb {
+            width: 22px;
+            height: 22px;
+            border: 0;
+            background: #fff;
+            border-radius: 100%;
+            box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

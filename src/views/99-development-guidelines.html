@@ -1,0 +1,31 @@
+---
+fabricator: true
+title: Development Guidelines
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Development Guidelines</h1>
+    
+    <ul>
+		{{#each docs}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}{{#each materials.99-development-guidelines.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+<div class="f-docs">{{#each docs}}
+
+	<div class="f-item-group">
+		<h2 id="{{@key}}">{{name}}</h2>
+		{{{content}}}
+	</div>
+
+{{/each}}</div>
+
+{{#each materials.99-development-guidelines.items}}
+
+{{> f-item-style this}}
+
+{{/each}}

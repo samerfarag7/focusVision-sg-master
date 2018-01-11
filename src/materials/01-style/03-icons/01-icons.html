@@ -1,0 +1,12 @@
+---
+annotate-element: icons
+---
+<div class="d-flex flex-wrap align-items-center f-icons">
+    {{#each toolkit.icons}}
+    <div class="d-flex flex-column align-items-center">
+        <svg class="icon icon-{{this}}">
+            <use xlink:href="#icon-{{this}}"></use>
+        </svg><span class="name"> icon-{{this}}</span>
+    </div>
+    {{/each}}
+</div>

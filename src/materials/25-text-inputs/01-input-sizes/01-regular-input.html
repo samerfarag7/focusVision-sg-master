@@ -1,0 +1,12 @@
+<div class="form-group{{#if formfield-class}} {{formfield-class}}{{/if}} form-textfield{{#if disabled}} form-textfield-disabled{{/if}}">
+    <label for="{{#if id}}{{id}}{{^}}input{{/if}}" class="body-1-medium{{#if error}} error-class{{/if}}">{{#if label}}{{label}}{{^}}Label{{/if}}</label>
+    <input type="text" id="{{#if id}}{{id}}{{^}}input{{/if}}" class="form-control form-textfield-input{{#if error}} error-class mb-1{{/if}}{{#if input-class}} {{input-class}}{{/if}}"{{#if placeholder}} placeholder="{{placeholder}}"{{/if}}{{#if error}} aria-controls="validation-msg"{{/if}}{{#if disabled}} disabled{{/if}}>
+</div>
+{{#if error}}
+<div class="input-error mt-2 py-3 pl-4 pr-5 d-flex d-row" id="validation-msg">
+    <svg class="icon icon-error" width="24" height="24" aria-label="Validation error detected">
+        <use xlink:href="#{{#if error}}icon-error{{/if}}"></use>
+    </svg>
+	<p class="body-2-medium ml-3">{{error}}</p>
+</div>
+{{/if}}

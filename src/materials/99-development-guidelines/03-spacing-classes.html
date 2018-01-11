@@ -1,0 +1,35 @@
+<p>The Zeplin comps are not pixel-perfect. I noticed discrepencies in Zeplin related to component margin/padding. For instance, some elements denote a padding of 21px while 20px and 24px padding are the more prevalent margins/paddings closest to that ratio.</p>
+<p>To resolve these irregularities, we will use margin/padding utility classes to ensure consistent spacing.</p>
+<p>The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.</p>
+<p>Where property is one of:</p>
+<ul>
+    <li>m - for classes that set margin</li>
+    <li>p - for classes that set padding</li>
+</ul>
+<p>Where sides is one of:</p>
+<ul>
+    <li>t - for classes that set margin-top or padding-top</li>
+    <li>b - for classes that set margin-bottom or padding-bottom</li>
+    <li>l - for classes that set margin-left or padding-left</li>
+    <li>r - for classes that set margin-right or padding-right</li>
+    <li>x - for classes that set both *-left and *-right</li>
+    <li>y - for classes that set both *-top and *-bottom</li>
+    <li>blank - for classes that set a margin or padding on all 4 sides of the element</li>
+</ul>
+<p>Where size is one of:</p>
+<ul>
+    <li>0 - for classes that eliminate the margin or padding by setting it to 0</li>
+    <li>1 - for classes that set the margin or padding to 4px</li>
+    <li>2 - for classes that set the margin or padding to 8px</li>
+    <li>3 - for classes that set the margin or padding to 10px</li>
+    <li>4 - for classes that set the margin or padding to 12px</li>
+    <li>5 - for classes that set the margin or padding to 16px</li>
+    <li>6 - for classes that set the margin or padding to 20px</li>
+    <li>7 - for classes that set the margin or padding to 24px</li>
+    <li>8 - for classes that set the margin or padding to 30px</li>
+    <li>9 - for classes that set the margin or padding to 40px</li>
+</ul>
+<p>For example, to set a bottom margin of 12px on an element, add class ".mb-4". To give that element padding of 24px, add class ".p-7".</p>
+<p>Likewise, if you see in the comp a padding of 6px, convert that to the nearest predefined utility ratio (4px or 8px). For the spacing of a label at 6px above an input field, I'd probably round down to 4px to ehnance the impression these elements are linked, whereas a header top/bottom padding of 6px should probably be rounded up to 8px to promote whitespace.</p>
+<p>If in doubt, choose an approximate utility ratio and refer me to the component in question in the library for approval.</p>
+<p><strong>Note:</strong> Icon sizes and form element widths/heights should not be converted to these utility ratios unless the size seems to be an aberration (an error in the comp). For instance, text field inputs should be 48px tall (as shown) and an icon displayed at 18 x 18 pixels should remain that size. The utility classes/ratios listed above should only be applied to margins and paddings, not widths/heights.</p>

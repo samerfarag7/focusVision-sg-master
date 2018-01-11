@@ -1,0 +1,7 @@
+<div class="form-group form-textfield form-textarea {{#if disabled}}form-textfield-disabled{{/if}}">
+    <div class="d-flex justify-content-between align-items-baseline">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <span id="inputCharLeft" class="char-left body-1-medium">1000 characters left</span>
+    </div>
+    <textarea class="form-control form-textfield-input" id="exampleFormControlTextarea1" rows="3"{{#if maxlength}} maxlength="{{maxlength}}"{{^}} maxlength="1000"{{/if}}{{#if disabled}} disabled{{/if}}></textarea>
+</div>

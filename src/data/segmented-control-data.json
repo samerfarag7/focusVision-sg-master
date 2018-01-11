@@ -1,0 +1,14 @@
+[
+{
+    name: "Repeating",
+    active: true,
+},
+{
+    name: "One-time",
+    active: false,
+},
+{
+    name: "One-time",
+    active: false,
+}
+]

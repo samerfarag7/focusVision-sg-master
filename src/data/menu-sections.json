@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Section 1",
+    "items": [
+      {
+        "name": "Option 1"
+      },
+      {
+        "name": "Option 2"
+      },
+      {
+        "name": "Option 3"
+      }
+    ]
+  },
+  {
+    "name": "Section 2",
+    "items": [
+      {
+        "name": "Option 4"
+      },
+      {
+        "name": "Option 5"
+      },
+      {
+        "name": "Option 6"
+      }
+    ]
+  }
+]

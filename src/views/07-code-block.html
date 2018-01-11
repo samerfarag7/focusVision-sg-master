@@ -1,0 +1,19 @@
+---
+fabricator: true
+title: Code Block
+---
+
+<div class="f-item-group-title">
+    <h1 data-f-toggle="labels">Code Block</h1>
+    <ul>
+        {{#each materials.07-code-block.items}}
+        <li><a href="#{{@key}}">{{name}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#each materials.07-code-block.items}}
+
+{{> f-item this}}
+
+{{/each}}

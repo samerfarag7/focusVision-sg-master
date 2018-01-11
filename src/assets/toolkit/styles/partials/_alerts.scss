@@ -1,0 +1,151 @@
+//*---------------------------------------*
+//  Alerts and Messages and Validation
+//*---------------------------------------*
+.alert {
+    border-radius: $border-radius;
+    padding: 0;
+
+    & > p {
+        color: $slate;
+        display: flex;
+        will-change: initial;
+    }
+
+    & a {
+        color: $slate;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .alert-body {
+        margin-left: 58px;
+        color: $slate;
+    }
+}
+
+// Headings for larger alerts
+.alert-title {
+// Specified to prevent conflicts of changing $headings-color
+    color: $slate;
+}
+
+// Provide class for links that match alerts
+.alert-link {
+    font-size: $alert-link-font-size;
+    font-weight: $alert-link-font-weight;
+    line-height: $alert-link-line-height;
+}
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+.alert-dismissible {
+    box-shadow: $box-shadow-distant;
+    
+    button {
+        &:focus {
+            outline: 0 auto rgba($light-green, 0);
+        }
+        &:hover {
+            .icon {
+                fill: rgba($slate, 1);
+            }
+        } 
+    }
+
+    .close {
+        position: relative;
+        padding: 3px;
+        border: none;
+        background-color: rgba($light-green, 0);
+        cursor: pointer;
+
+        .icon {
+            fill: rgba($slate, .5);
+        }
+    }
+}
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+.alert-success {
+    background-color: $alert-success-bg;
+
+    & .icon {
+        fill: $alert-success-icon;
+    }
+}
+
+.alert-info {
+    background-color: $alert-info-bg;
+
+    & .icon {
+        fill: $alert-info-icon;
+    }
+}
+
+.alert-warning {
+    background-color: $alert-warning-bg;
+
+    & .icon {
+        fill: $alert-warning-icon;
+    }
+}
+
+.alert-error {
+    background-color: $alert-error-bg;
+    
+    & .icon {
+        fill: $alert-error-icon;
+    }
+}
+
+//*---------------------------------------*
+//  Error Validation Msg
+//*---------------------------------------*
+.input-error,
+.checkbox-validation-helptext {
+    border-radius: $border-radius;
+    position: relative;
+    background-color: $light-red;
+    
+    & > p {
+        color: $slate;
+        display: flex;
+        margin-top: 3px;
+        will-change: initial;
+    }
+
+    &:before {
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba($white, 0);
+        border-bottom-color: $light-red;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    
+    .icon {
+        fill: $red;
+    }
+}
+
+//*---------------------------------------*
+//  Error Validation Changes for Checkboxes
+//*---------------------------------------*
+.checkbox-validation-helptext {
+    margin-top: 18px;
+
+
+    &:before {
+        bottom: 100%;
+        left: 26px; 
+    }
+}

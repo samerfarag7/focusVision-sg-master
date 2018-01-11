@@ -1,0 +1,66 @@
+.dialog-dropdown {
+    &.menu-dropdown {
+        .dropdown-menu {
+            margin: 8px 0;
+            padding: 0!important;
+        }
+    }
+}
+
+.dialog-standalone {
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 0;
+    }
+    .modal-content {
+        border-radius: 6px;
+        box-shadow: $box-shadow-distant;
+        border: none;
+        padding: 0 28px;
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+        &.dialog-sm {
+            height: 186px;
+            width: 360px;
+        }
+        &.dialog-md {
+            width: 416px;
+        }
+    }
+    .modal-header {
+        border-bottom: none;
+        color: $slate;
+        padding: 20px 0 0;
+        .icon-warning {
+            fill: $orange;
+        }
+        .close {
+            svg {
+                fill: rgba($slate, .5);
+            }
+            &:hover {
+                svg {
+                    fill: rgba($slate, 1);
+                }
+            }
+        }
+    }
+    .modal-body {
+        color: $slate;
+        margin: 18px 0 28px;
+        &.green-container {
+            height: 220px;
+            background-color: rgba($brand-green, .15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .modal-footer {
+        border-top: none;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+}
