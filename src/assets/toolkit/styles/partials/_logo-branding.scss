@@ -1,0 +1,56 @@
+.logobranding {
+    .logo-img {
+        display: none;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 25px;
+        & > p {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .logo-upload {
+        color: $cadet;
+        font-size: 36px;
+        line-height: 90px;
+    }
+    .btn-secondary {
+        background: none;
+        padding: 0;
+        height: 90px;
+        &:hover{
+            .logo-container {
+                background: $pewter;
+            }
+            .logo-upload {
+                display: none;
+            }
+            .logo-img {
+                display: block;
+                color: $white;
+                border-radius: 6px;
+                font-size: 12px;
+            }
+        }
+    }
+    .logo-container {
+        background: $slate;
+        width: 90px;
+        height: 90px;
+        border-radius: 6px;
+        &-upload{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .logo-name{
+        color: white;
+        padding-left: 20px;
+    }
+    .logo-uploaded{
+        width: 90px;
+        height: 90px;
+    }
+}

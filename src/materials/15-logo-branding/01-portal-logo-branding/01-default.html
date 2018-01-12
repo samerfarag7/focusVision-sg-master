@@ -1,0 +1,16 @@
+<div class="logobranding">
+    <button class="btn btn-secondary" type="button" aria-haspopup="true" aria-expanded="false">
+        {{#if logo-uploaded}}
+        <img class="logo-uploaded" src="assets/toolkit/images/{{logo-uploaded}}"/>
+        {{^}}
+        <div class="logo-container"> 
+                <div class="logo-img">
+                    <img class="logo-container-upload pb-1" src="assets/toolkit/images/icon-upload.svg"/>
+                    <p class="body-1-medium">Upload</p>
+                </div>
+            <div class="logo-upload">H</div>
+        </div>
+        {{/if}}
+    </button>
+    <label class="logo-name headline-1">Hotel Tonight</label>
+</div>
